@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "This repository is an unpublished candidate. Do not cite it as a released or DOI-bearing object."
+title: "The Informatics Student’s Guide to Research Projects, Theses and Dissertations: Digital Companion and Editable Figures"
+type: dataset
+authors:
+  - family-names: Clim
+    given-names: Antonio
+    orcid: "https://orcid.org/0000-0003-4745-0431"
+    affiliation: "Department of Economic Informatics and Cybernetics, Bucharest University of Economic Studies"
+  - family-names: Aldrigo
+    given-names: Martino
+version: "1.1.1-rc.2"
+abstract: "Private, unpublished repository candidate containing selected companion records and editable figures for The Informatics Student’s Guide to Research Projects, Theses and Dissertations. Public release, licence and DOI decisions remain on hold."
+keywords:
+  - informatics education
+  - research projects
+  - theses
+  - dissertations
+  - evidence synthesis
+  - research workflow
