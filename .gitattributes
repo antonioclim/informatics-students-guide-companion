@@ -1,5 +1,7 @@
 * text=auto eol=lf
 *.docx binary
+*.pptx binary
+*.odg binary
 *.png binary
 *.zip binary
 *.svg text eol=lf
