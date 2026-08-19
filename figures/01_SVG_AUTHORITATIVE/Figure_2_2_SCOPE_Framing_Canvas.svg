@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#555"/></marker></defs>
+<rect width="1800" height="900" fill="white"/>
+<rect x="500" y="20" rx="22" width="800" height="205" fill="#f2f2f2" stroke="#333" stroke-width="4"/>
+<text x="900" y="78" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="46" font-weight="bold">S — SITUATION AND STAKEHOLDERS</text>
+<text x="900" y="133" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="40">observed condition · affected roles</text>
+<text x="900" y="181" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="38">evidence source · unresolved uncertainty</text>
+<rect x="25" y="270" rx="22" width="560" height="245" fill="#f2f2f2" stroke="#333" stroke-width="4"/>
+<text x="305" y="337" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">C — CHANGE SOUGHT</text>
+<text x="305" y="388" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">AND CONSTRAINTS</text>
+<text x="305" y="447" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="37">access · time · authority</text>
+<text x="305" y="490" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="37">limiting uncertainty</text>
+<rect x="620" y="295" rx="26" width="560" height="245" fill="#dedede" stroke="#222" stroke-width="5"/>
+<text x="900" y="360" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="48" font-weight="bold">TRACTABLE PROJECT</text>
+<text x="900" y="414" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="39">coherent fields</text>
+<text x="900" y="461" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="39">inspectable evidence</text>
+<text x="900" y="508" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="39">explicit uncertainty and limits</text>
+<rect x="1215" y="270" rx="22" width="560" height="245" fill="#f2f2f2" stroke="#333" stroke-width="4"/>
+<text x="1495" y="337" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">O — OUTCOMES</text>
+<text x="1495" y="388" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">AND OBJECTIVES</text>
+<text x="1495" y="447" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="37">observable outputs · counter-result</text>
+<text x="1495" y="490" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="37">remaining uncertainty</text>
+<rect x="80" y="635" rx="22" width="760" height="205" fill="#f2f2f2" stroke="#333" stroke-width="4"/>
+<text x="460" y="704" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">P — PLANNED EVIDENCE</text>
+<text x="460" y="756" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">AND PERFORMANCE CRITERIA</text>
+<text x="460" y="811" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="37">data · baseline · provenance · uncertainty</text>
+<rect x="960" y="635" rx="22" width="760" height="205" fill="#f2f2f2" stroke="#333" stroke-width="4"/>
+<text x="1340" y="704" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">E — EXCLUSIONS, ASSUMPTIONS</text>
+<text x="1340" y="756" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="43" font-weight="bold">AND ETHICAL BOUNDARIES</text>
+<text x="1340" y="811" text-anchor="middle" font-family="Times New Roman, Liberation Serif, serif" font-size="37">outside scope · fallback · uncertainty</text>
+<line x1="900" y1="235" x2="900" y2="278" stroke="#555" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="595" y1="392" x2="603" y2="392" stroke="#555" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1205" y1="392" x2="1197" y2="392" stroke="#555" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="615" y1="625" x2="755" y2="555" stroke="#555" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1185" y1="625" x2="1045" y2="555" stroke="#555" stroke-width="6" marker-end="url(#arrow)"/>
+</svg>

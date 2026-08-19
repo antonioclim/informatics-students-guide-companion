@@ -1,0 +1,12 @@
+asset_class,provenance,repository_decision,privacy_class,current_licence_status,open_gate,future_public_eligibility
+Book manuscript,authorial manuscript,excluded,restricted,all rights reserved; publisher decision pending,publisher and coauthor approval,No
+18 SVG figures,authorial figures derived byte-exactly from v3.1 master,included in private candidate,reviewable private,no public licence,"coauthor, publisher, institutional and asset-level rights decision",Conditional
+18 PNG fallbacks,technical derivatives of SVG sources,included in private candidate,reviewable private,no public licence; font substitution caveat,same as SVG plus final render confirmation,Conditional
+Companion workbook,authorial companion material,included in private candidate,reviewable private,no public licence,coauthor and publisher decision,Conditional
+CSV templates,authorial companion material,included in private candidate,reviewable private,no public licence,coauthor and publisher decision,Conditional
+Synthetic route examples,authorial synthetic/composite examples,included in private candidate,reviewable private,no public licence; synthetic warning mandatory,coauthor and publisher decision,Conditional
+Institutional links registry,authorial metadata and links to official sources,included,public-candidate after recheck,no public licence assigned to compilation,recheck volatile links and avoid redistributing official forms,Conditional
+Tool capability registry,authorial metadata and links to official documentation,included,public-candidate after recheck,no public licence assigned to compilation,recheck volatile capabilities,Conditional
+Validation scripts,authorial code,included,public-candidate,no public licence,decide code licence,Conditional
+Archived institutional HTML,mixed/official referenced material,excluded,restricted/excluded,not licensed for redistribution,none: remain excluded,No
+Third-party full-text sources,third-party,excluded,restricted/excluded,unknown or restrictive,lawful permission required,No

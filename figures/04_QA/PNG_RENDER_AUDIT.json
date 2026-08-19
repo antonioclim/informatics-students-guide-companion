@@ -1,0 +1,121 @@
+{
+  "count": 18,
+  "render_engine": "Inkscape",
+  "export_width_px": 2400,
+  "background": "white",
+  "font_environment": {
+    "Times New Roman_fc_match": "Tinos-Regular.ttf: \"Tinos\" \"Regular\"",
+    "Courier New_fc_match": "Cousine-Regular.ttf: \"Cousine\" \"Regular\""
+  },
+  "note": "PNG files are technical fallbacks rendered on Linux. SVG files are authoritative. PNG files do not constitute the Microsoft Word/Times New Roman proof.",
+  "figures": [
+    {
+      "figure_number": "1.1",
+      "png_sha256": "d543f9c9a3824ec147d857b1ef3b36dcc749e431393253d9ba9088a75b8458e5",
+      "png_width_px": 2400,
+      "png_height_px": 1560
+    },
+    {
+      "figure_number": "1.2",
+      "png_sha256": "c569da3503ec1e594f1baa8ef95bf26ba904e626c7c3283415411d7a424eb047",
+      "png_width_px": 2400,
+      "png_height_px": 1307
+    },
+    {
+      "figure_number": "2.1",
+      "png_sha256": "d25205527c59783b8dc1e65b9a364a69e568a2bd8791f75a8db255690cb157e7",
+      "png_width_px": 2400,
+      "png_height_px": 827
+    },
+    {
+      "figure_number": "2.2",
+      "png_sha256": "9d0c20d6753d038c341b64928a87af0ac248d7367ee2c0d976b3fe17ab11efe6",
+      "png_width_px": 2400,
+      "png_height_px": 1200
+    },
+    {
+      "figure_number": "3.1",
+      "png_sha256": "1673dcc667e74790fb93496c15290f87ffbdd9b6a6ee5af2ba16dd207c311c8b",
+      "png_width_px": 2400,
+      "png_height_px": 1013
+    },
+    {
+      "figure_number": "3.2",
+      "png_sha256": "d85681a4dbe440e9b9dea5c626f14b3b30cc9c32c66ac722ad182c0a515965cd",
+      "png_width_px": 2400,
+      "png_height_px": 1227
+    },
+    {
+      "figure_number": "4.1",
+      "png_sha256": "af681bb31e5c4774c4094064f7fa5a977f158498d2f8159ee471bb622fdadbca",
+      "png_width_px": 2400,
+      "png_height_px": 1340
+    },
+    {
+      "figure_number": "4.2",
+      "png_sha256": "b0ea63707f5a8aa402191c47cad9d373ecce4eeda3c89ee716e6a2d7b3e45a20",
+      "png_width_px": 2400,
+      "png_height_px": 1400
+    },
+    {
+      "figure_number": "5.1",
+      "png_sha256": "a202513bada32c0d4b546a69db0d6edd56f754e0abe866f10ad0ce89cb9d212a",
+      "png_width_px": 2400,
+      "png_height_px": 1280
+    },
+    {
+      "figure_number": "5.2",
+      "png_sha256": "e91d82098f7752905c60a342c5a5a1c6bdbd8659a9483d9660adce3fb2a55a44",
+      "png_width_px": 2400,
+      "png_height_px": 1307
+    },
+    {
+      "figure_number": "6.1",
+      "png_sha256": "ce8e3ee499d3acb76a39b8b6248e27efce27967747291e7159033a5e67e90c1c",
+      "png_width_px": 2400,
+      "png_height_px": 1303
+    },
+    {
+      "figure_number": "6.2",
+      "png_sha256": "4b599f6411a26bf2db721a4971741454517bc923cb176248f0daa7ab2897e476",
+      "png_width_px": 2400,
+      "png_height_px": 1403
+    },
+    {
+      "figure_number": "7.1",
+      "png_sha256": "f7ba16e12b4337c18914da4ee29a3fd0bec217bb9e7c9883403840490e2dcf70",
+      "png_width_px": 2400,
+      "png_height_px": 1309
+    },
+    {
+      "figure_number": "7.2",
+      "png_sha256": "d2b494ab73a528ea5318e158af02e6bca5bc9e5c06ec9deaf9b90228218b4d9d",
+      "png_width_px": 2400,
+      "png_height_px": 1309
+    },
+    {
+      "figure_number": "8.1",
+      "png_sha256": "9bd205cf642e089747d1d3679ad7f12db04709f7866ac60c4ecacf0ebede6ab6",
+      "png_width_px": 2400,
+      "png_height_px": 1292
+    },
+    {
+      "figure_number": "8.2",
+      "png_sha256": "b6369a5dc090754a823919ba93fc37c2f2094340eef68d8c91089178af3b5582",
+      "png_width_px": 2400,
+      "png_height_px": 1292
+    },
+    {
+      "figure_number": "9.1",
+      "png_sha256": "670cfc4157e43ee3691aa5e5eda97a7e9bd4bd3ca41a05b6df1d9b380bae042d",
+      "png_width_px": 2400,
+      "png_height_px": 1292
+    },
+    {
+      "figure_number": "9.2",
+      "png_sha256": "5868df84930e9868c1f6729cb823d7ce2178ea0511855b13539be2bce7b703d6",
+      "png_width_px": 2400,
+      "png_height_px": 1292
+    }
+  ]
+}

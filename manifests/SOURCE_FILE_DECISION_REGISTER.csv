@@ -1,0 +1,166 @@
+source_path,decision,basis,destination_class
+companion/00_READ_FIRST/KNOWN_LIMITATIONS.md,include,active v1.1.1 content,private candidate
+companion/00_READ_FIRST/LICENSE_AND_RIGHTS.md,include,active v1.1.1 content,private candidate
+companion/00_READ_FIRST/MAINTENANCE_AND_UPDATE_POLICY.md,include,active v1.1.1 content,private candidate
+companion/00_READ_FIRST/PACKAGE_SUMMARY.json,include,active v1.1.1 content,private candidate
+companion/00_READ_FIRST/README.md,include,active v1.1.1 content,private candidate
+companion/00_READ_FIRST/RELEASE_STATUS.md,include,active v1.1.1 content,private candidate
+companion/00_READ_FIRST/VERSION.txt,include,active v1.1.1 content,private candidate
+companion/01_WORKBOOK/COMPANION_WORKBOOK_v1.1.1.docx,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/CLAIM_EVIDENCE_MAP_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/CORPUS_LEDGER_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/DECIDE_RECORD_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/DEFENCE_QUESTION_MATRIX_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/DEMONSTRATION_RUNBOOK_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/FEASIBILITY_SPRINT_RECORD_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/GATE_RECORD_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/PROJECT_START_PACK_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/ROUTE_SELECTOR_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/SCOPE_CANVAS_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/TRACE_RECORD_MIN.csv,include,active v1.1.1 content,private candidate
+companion/02_TEMPLATES_MINIMUM/VERSION_MANIFEST_RECORD_MIN.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/ACCESSIBILITY_RENDER_AUDIT_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/APPRAISAL_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/ARGUMENT_SPINE_MAP_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/AUTHORITATIVE_FILE_VERSION_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/AUTHORITY_MATRIX_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/AUTHOR_IDENTITY_HEADLINE_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/CANDIDATE_ARTEFACT_INSPECTION_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/CLAIM_EVIDENCE_MAP_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/CORE_SOURCE_NOTE_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/CORPUS_LEDGER_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/DECIDE_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/DEFENCE_QUESTION_MATRIX_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/DEFENCE_READINESS_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/DEMONSTRATION_RUNBOOK_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/EARLY_TEST_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/EVALUATION_DESIGN_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/EVIDENTIAL_OBJECT_NAVIGATION_AUDIT_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/EXECUTION_PROVENANCE_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/FEASIBILITY_SPRINT_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/PROJECT_START_PACK_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/RISK_ASSUMPTION_REGISTER_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/ROUTE_SELECTOR_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SCOPE_CANVAS_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SEARCH_STRATEGY_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SECTION_CONTRACT_REGISTER_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SIMILARITY_AI_AUTHORSHIP_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SOURCE_RIGHTS_ATTRIBUTION_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SUBMISSION_PACKAGE_MANIFEST_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/SYNTHESIS_MEMO_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/TRACE_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/UNCERTAINTY_COUNTER_EVIDENCE_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/VERSION_MANIFEST_RECORD_FULL.csv,include,active v1.1.1 content,private candidate
+companion/03_TEMPLATES_FULL/WORK_UNIT_BRIEF_FULL.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/README.md,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/ROUTE_WORKED_EXAMPLES_v1.1.1.docx,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/01_ROUTE_PROFILE.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/02_SCOPE_CANVAS_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/03_DECIDE_RECORD_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/04_EXECUTION_PROVENANCE_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/05_EVALUATION_DESIGN_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/06_CLAIM_EVIDENCE_MAP_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/07_DEMONSTRATION_RUNBOOK_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/08_DEFENCE_QUESTION_MATRIX_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/algorithmic_simulation/README.md,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/01_ROUTE_PROFILE.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/02_SCOPE_CANVAS_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/03_DECIDE_RECORD_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/04_EXECUTION_PROVENANCE_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/05_EVALUATION_DESIGN_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/06_CLAIM_EVIDENCE_MAP_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/07_DEMONSTRATION_RUNBOOK_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/08_DEFENCE_QUESTION_MATRIX_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/case_study/README.md,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/01_ROUTE_PROFILE.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/02_SCOPE_CANVAS_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/03_DECIDE_RECORD_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/04_EXECUTION_PROVENANCE_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/05_EVALUATION_DESIGN_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/06_CLAIM_EVIDENCE_MAP_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/07_DEMONSTRATION_RUNBOOK_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/08_DEFENCE_QUESTION_MATRIX_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/hybrid_route/README.md,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/01_ROUTE_PROFILE.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/02_SCOPE_CANVAS_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/03_DECIDE_RECORD_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/04_EXECUTION_PROVENANCE_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/05_EVALUATION_DESIGN_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/06_CLAIM_EVIDENCE_MAP_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/07_DEMONSTRATION_RUNBOOK_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/08_DEFENCE_QUESTION_MATRIX_COMPLETED.csv,include,active v1.1.1 content,private candidate
+companion/04_ROUTE_KITS/qualitative_inquiry/README.md,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/CURRENT_INSTITUTIONAL_LINKS_2026-08-19.csv,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/GATE_CHAIN_REGISTRY_v1.1.1.csv,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/GLOBAL_TERMINOLOGY_LOCK_2026-08-19.csv,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/RECORD_CATALOGUE_v1.1.1.csv,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/REGISTRY_SOURCE_NOTES.md,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/ROUTE_EVIDENCE_OBLIGATION_REGISTRY_v1.1.1.csv,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/TOOL_CAPABILITY_REGISTRY_2026-08-19.csv,include,active v1.1.1 content,private candidate
+companion/05_REGISTRIES/TOOL_USE_DECISION_RECORD.csv,include,active v1.1.1 content,private candidate
+companion/06_MAINTENANCE/CHANGELOG.md,include,active v1.1.1 content,private candidate
+companion/06_MAINTENANCE/CURRENT_LINK_CHECK_LOG.csv,include,active v1.1.1 content,private candidate
+companion/06_MAINTENANCE/DEPRECATION_AND_SUPERSESSION_LOG.csv,include,active v1.1.1 content,private candidate
+companion/06_MAINTENANCE/RELEASE_CHECKLIST.csv,include,active v1.1.1 content,private candidate
+companion/07_ARCHIVED_RESOURCES/Ghid_interactiv_Licenta_Disertatie_CSIE_ASE_DATED_2026-07-12_DO_NOT_TREAT_AS_CURRENT.html,exclude,archived or provenance content outside public candidate,private handover only
+companion/07_ARCHIVED_RESOURCES/README_ARCHIVE.md,exclude,archived or provenance content outside public candidate,private handover only
+companion/08_PROVENANCE/v1.0.0_LICENSE_AND_RIGHTS.md,exclude,archived or provenance content outside public candidate,private handover only
+companion/08_PROVENANCE/v1.0.0_MANIFEST.csv,exclude,archived or provenance content outside public candidate,private handover only
+companion/08_PROVENANCE/v1.0.0_README.md,exclude,archived or provenance content outside public candidate,private handover only
+companion/08_PROVENANCE/v1.0.0_SHA256SUMS.txt,exclude,archived or provenance content outside public candidate,private handover only
+companion/08_PROVENANCE/v1.0.0_VERSION.txt,exclude,archived or provenance content outside public candidate,private handover only
+companion/MANIFEST.csv,exclude,archived or provenance content outside public candidate,private handover only
+companion/SHA256SUMS.txt,exclude,archived or provenance content outside public candidate,private handover only
+figures/00_READ_FIRST/README.md,exclude,private build script or non-portable production artefact,internal provenance
+figures/00_READ_FIRST/RIGHTS_AND_RELEASE_STATUS.md,exclude,private build script or non-portable production artefact,internal provenance
+figures/01_SVG_AUTHORITATIVE/Figure_1_1_Evidence_to_Defence_Architecture.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_1_2_Advice_Authority_and_Authorship_Map.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_2_1_Topic_Decision_Path.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_2_2_SCOPE_Framing_Canvas.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_3_1_Evidence_Identity_Chain.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_3_2_CORPUS_Records_Cycle.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_4_1_Reversible_Driver_to_Test_Chain.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_4_2_DECIDE_Conditional_Commitment_Cycle.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_5_1_Candidate_to_Admission_Chain.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_5_2_Bounded_Execution_Loop.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_6_1_Evidence_to_Claim_Ladder.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_6_2_Claim_Stress_Test_and_Gate_Returns.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_7_1_Gate_Records_to_Answer_Architecture.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_7_2_Section_and_Paragraph_Contract.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_8_1_Semantic_First_Revision_and_Proof_Control.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_8_2_One_Study_Consistency_and_Metadata_Lock.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_9_1_Author_Side_Closure_to_Defence_Ready_Record.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/01_SVG_AUTHORITATIVE/Figure_9_2_One_Bounded_Contribution_Across_Defence_Interfaces.svg,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_1_1_Evidence_to_Defence_Architecture.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_1_2_Advice_Authority_and_Authorship_Map.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_2_1_Topic_Decision_Path.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_2_2_SCOPE_Framing_Canvas.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_3_1_Evidence_Identity_Chain.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_3_2_CORPUS_Records_Cycle.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_4_1_Reversible_Driver_to_Test_Chain.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_4_2_DECIDE_Conditional_Commitment_Cycle.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_5_1_Candidate_to_Admission_Chain.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_5_2_Bounded_Execution_Loop.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_6_1_Evidence_to_Claim_Ladder.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_6_2_Claim_Stress_Test_and_Gate_Returns.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_7_1_Gate_Records_to_Answer_Architecture.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_7_2_Section_and_Paragraph_Contract.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_8_1_Semantic_First_Revision_and_Proof_Control.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_8_2_One_Study_Consistency_and_Metadata_Lock.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_9_1_Author_Side_Closure_to_Defence_Ready_Record.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/02_PNG_TECHNICAL_FALLBACK/Figure_9_2_One_Bounded_Contribution_Across_Defence_Interfaces.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/03_METADATA/ALT_TEXT_REGISTER.csv,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/03_METADATA/ALT_TEXT_REGISTER.md,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/03_METADATA/FIGURE_MANIFEST.csv,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/03_METADATA/FIGURE_MANIFEST.json,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/03_METADATA/FONT_AND_RENDER_NOTE.md,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/03_METADATA/RIGHTS_AND_PROVENANCE_REGISTER.csv,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/04_QA/FIGURE_CONTACT_SHEET.png,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/04_QA/FIGURE_PIXEL_BOUNDS_AUDIT.csv,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/04_QA/PNG_RENDER_AUDIT.json,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/04_QA/SVG_SECURITY_AUDIT.json,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/04_QA/VISUAL_REVIEW_RECORD.md,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/05_SCRIPTS/extract_svg_from_master.py,exclude,private build script or non-portable production artefact,internal provenance
+figures/05_SCRIPTS/regenerate_png_fallbacks.sh,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/05_SCRIPTS/validate_figures.py,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
+figures/SHA256SUMS.txt,exclude,private build script or non-portable production artefact,internal provenance
