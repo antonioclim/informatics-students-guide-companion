@@ -7,6 +7,18 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 
+SKIP_DIRS={'.git','__pycache__','_qa','_build'}
+
+def is_repo_file(path: Path) -> bool:
+    try:
+        rel=path.relative_to(ROOT)
+    except ValueError:
+        return False
+    return path.is_file() and not any(part in SKIP_DIRS for part in rel.parts)
+
+def repo_files():
+    return (path for path in ROOT.rglob('*') if is_repo_file(path))
+
 def sha(path):
     h=hashlib.sha256()
     with path.open('rb') as f:
@@ -34,10 +46,10 @@ for rel in [
 
 if (ROOT/'LICENSE_AND_RIGHTS.md').exists(): errors.append('superseded root LICENSE_AND_RIGHTS.md still present')
 prohibited_names={'LICENSE','LICENSE.txt','LICENSE.md'}
-for p in ROOT.rglob('*'):
-    if p.is_file() and p.name in prohibited_names: errors.append(f'public licence file prohibited during hold: {p.relative_to(ROOT)}')
+for p in repo_files():
+    if p.name in prohibited_names: errors.append(f'public licence file prohibited during hold: {p.relative_to(ROOT)}')
     lower=p.name.lower()
-    if p.is_file() and ('authoritative_master' in lower or lower.endswith('.pdf') and 'report' not in lower):
+    if ('authoritative_master' in lower or lower.endswith('.pdf') and 'report' not in lower):
         errors.append(f'possible prohibited manuscript/proof payload: {p.relative_to(ROOT)}')
 for prohibited in ['companion/07_ARCHIVED_RESOURCES','companion/08_PROVENANCE']:
     if (ROOT/prohibited).exists(): errors.append(f'excluded directory present: {prohibited}')
@@ -53,8 +65,8 @@ if not version.startswith('1.1.1-rc.3\n'): errors.append('VERSION.txt is not 1.1
 
 CANONICAL_TITLE='The Informatics Student’s Guide to Research Projects, Theses and Dissertations'
 DUPLICATED_TITLE=CANONICAL_TITLE+' to Research Projects, Theses and Dissertations'
-for path in ROOT.rglob('*'):
-    if not path.is_file() or path.name=='SHA256SUMS.txt': continue
+for path in repo_files():
+    if path.name=='SHA256SUMS.txt': continue
     if path.suffix.lower() in {'.md','.txt','.csv','.json','.cff','.yml','.yaml','.py','.sh'} or path.name in {'.gitignore','.gitattributes'}:
         content=path.read_text(encoding='utf-8',errors='replace')
         if DUPLICATED_TITLE in content: errors.append(f'duplicated canonical title in {path.relative_to(ROOT)}')
@@ -93,14 +105,14 @@ if sums.exists():
         expected,rel=line.split('  ',1); declared.add(rel); p=ROOT/rel
         if not p.exists(): errors.append(f'SHA256SUMS missing file {rel}')
         elif sha(p)!=expected: errors.append(f'SHA256 mismatch {rel}')
-    actual={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and p.name!='SHA256SUMS.txt'}
+    actual={p.relative_to(ROOT).as_posix() for p in repo_files() if p.name!='SHA256SUMS.txt'}
     if declared!=actual:
         for rel in sorted(actual-declared): errors.append(f'SHA256SUMS undeclared file {rel}')
         for rel in sorted(declared-actual): errors.append(f'SHA256SUMS stale file {rel}')
 
 # Repository manifest coverage, excluding self-generated manifest files and SHA list.
 manifest_excluded={'manifests/REPOSITORY_MANIFEST.csv','manifests/REPOSITORY_MANIFEST.json','SHA256SUMS.txt'}
-actual_manifest={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and p.relative_to(ROOT).as_posix() not in manifest_excluded}
+actual_manifest={p.relative_to(ROOT).as_posix() for p in repo_files() if p.relative_to(ROOT).as_posix() not in manifest_excluded}
 try:
     with (ROOT/'manifests/REPOSITORY_MANIFEST.csv').open(encoding='utf-8-sig',newline='') as f: mrows=list(csv.DictReader(f))
     declared={r['path'] for r in mrows}
@@ -111,12 +123,12 @@ try:
 except Exception as e: errors.append(f'repository manifest parse error: {e}')
 
 # CSV parsability and no absolute private paths.
-for p in ROOT.rglob('*.csv'):
+for p in (path for path in repo_files() if path.suffix.lower()=='.csv'):
     try:
         with p.open(encoding='utf-8-sig',newline='') as f: list(csv.reader(f))
     except Exception as e: errors.append(f'CSV parse error {p.relative_to(ROOT)}: {e}')
-for p in ROOT.rglob('*'):
-    if p.is_file() and p.suffix.lower() in {'.md','.txt','.csv','.json','.cff','.yml','.yaml','.py','.sh'}:
+for p in repo_files():
+    if p.suffix.lower() in {'.md','.txt','.csv','.json','.cff','.yml','.yaml','.py','.sh'}:
         t=p.read_text(encoding='utf-8',errors='replace')
         if re.search(r'/(?:mnt/data|home|Users)/',t): errors.append(f'absolute private path in {p.relative_to(ROOT)}')
 

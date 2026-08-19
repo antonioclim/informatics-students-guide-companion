@@ -1363,8 +1363,8 @@
   },
   {
     "path": "scripts/validate_repository.py",
-    "bytes": 7631,
-    "sha256": "b2267ada395c46d51c1f266739aa97003e2270d39f79772f921541d01f5e6b00",
+    "bytes": 7899,
+    "sha256": "1bec5926a6330ab43a1575c5317e62eda13a84b8c2a3c2ef258ab5478cb536ac",
     "suffix": ".py"
   }
 ]
