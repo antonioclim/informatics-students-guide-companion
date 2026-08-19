@@ -1,0 +1,11 @@
+﻿field,entry,evidence_or_basis,review_status,guidance
+Assessed product,,,,"Project, bachelor’s thesis, master’s dissertation or formal evidence synthesis."
+Dominant route,,,,Select one of the eight routes.
+Secondary component,,,,Use only when it has a distinct evidence role.
+Unit of analysis,,,,"Name the artefact, participant, case, study, run, record or other unit."
+Core evidence object,,,,Name the evidence that must exist before the principal claim can be made.
+Credible comparison or reference,,,,"Name the baseline, reference case, alternative account or protocol basis."
+Uncertainty or boundary,,,,State the main limit that must remain visible.
+Prohibited inference,,,,Write the attractive but unsupported claim that must not be made.
+Current gate,,,,Name the gate currently being prepared.
+Single next record,,,,Name the next record that will reduce the most consequential uncertainty.

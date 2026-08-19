@@ -1,0 +1,37 @@
+{
+  "title": "The Informatics Student’s Guide to Research Projects, Theses and Dissertations",
+  "subtitle": "From Topic Selection to Evidence, Implementation, Writing and Defence",
+  "version": "1.1.1",
+  "date": "2026-08-19",
+  "status": "Unpublished authorial candidate",
+  "authors": "Antonio Clim and Martino Aldrigo",
+  "source_master_filename": "TISG_RPTD_FINAL_ASE_X5_v3.1_2026-08-19.docx",
+  "source_master_sha256": "b275e30b0f9139ae134d7d94fd8c5ccf891fcd95be0e4b562d286d69c9558ab7",
+  "minimum_template_count": 12,
+  "full_template_count": 33,
+  "route_kit_count": 4,
+  "institutional_registry_rows": 7,
+  "tool_registry_rows": 17,
+  "workbook_pages": 50,
+  "route_examples_pages": 10,
+  "workbook_a11y": {
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "route_examples_a11y": {
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "title_migration": {
+    "from": "The Informatics Student’s Guide",
+    "to": "The Informatics Student’s Guide to Research Projects, Theses and Dissertations",
+    "subtitle": "From Topic Selection to Evidence, Implementation, Writing and Defence",
+    "historical_provenance_preserved": true
+  },
+  "public_release": false,
+  "public_doi": false,
+  "public_licence": false,
+  "source_master_integrity": true
+}

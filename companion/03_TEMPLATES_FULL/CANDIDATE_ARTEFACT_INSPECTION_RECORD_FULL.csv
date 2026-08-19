@@ -1,0 +1,13 @@
+﻿field,entry,evidence_or_basis,review_status,guidance
+Candidate identifier,,,,Stable ID.
+Object and version,,,,Primary artefact.
+Work-unit link,,,,Authorised unit.
+Inspection basis,,,,"Specification, protocol, reference, known case or reviewer basis."
+Checks performed,,,,Route-appropriate checks.
+Failed or adverse cases,,,,Retained evidence.
+External effects,,,,"Network, file system, participant, organisational or other effects."
+"Secrets, privacy and licences",,,,Status and remediation.
+Deviations,,,,Difference from approved plan.
+Disposition,,,,"Accept locally, repair, repeat, reject, defer or quarantine."
+Reason,,,,Evidence-based justification.
+"Reviewer, date and version",,,,Lifecycle record.

@@ -1,0 +1,15 @@
+﻿field,entry,evidence_or_basis,review_status,guidance
+Situation,,,,Observed context and evidence basis.
+Concern,,,,Consequential problem or knowledge gap.
+Object,,,,"Artefact, population, corpus, process or case."
+Purpose,,,,"Build, test, compare, estimate, interpret, investigate or synthesise."
+Evidence obligation,,,,Evidence required for the answer.
+Boundary,,,,"Time, environment, population, case, corpus and exclusions."
+Contribution,,,,Smallest defensible contribution.
+Research question,,,,Single route-aligned question.
+Alternative question rejected,,,,State why it was rejected.
+Assumptions,,,,Assumptions not yet established.
+Known uncertainty,,,,What is unknown at scoping time.
+Access evidence,,,,"Permission, availability or feasibility evidence."
+Reopening trigger,,,,"Finding that forces narrowing, pivoting or stopping."
+Reviewer decision and version,,,,"Decision, reviewer, date and version."

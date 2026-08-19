@@ -1,0 +1,9 @@
+﻿field,entry,evidence_or_basis,review_status,guidance
+Critical uncertainty,,,,Name the uncertainty with the greatest downstream cost.
+Bounded action,,,,State the smallest safe test.
+Evidence produced,,,,Name the retained evidence object.
+Acceptance criterion,,,,State the criterion before reporting the outcome.
+Decision consequence,,,,"Continue, narrow, pivot or stop."
+Gate reopened if failed,,,,Name the earliest responsible gate.
+Owner and dates,,,,"Record owner, start and end."
+Version and status,,,,"Assign identifier, version and disposition."

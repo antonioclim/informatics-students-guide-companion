@@ -1,0 +1,13 @@
+﻿field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,,,,Stable ID.
+Minimum meaningful claim,,,,Exact candidate wording.
+Consequence if wrong,,,,Why the claim deserves scrutiny.
+Route and unit,,,,Route-specific evaluation object.
+Comparison or reference,,,,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,,,,All required evidence objects.
+"Metrics, estimates or analytic outputs",,,,With units and definitions.
+Uncertainty,,,,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,,,,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check",,,,Proportionate independent challenge.
+Acceptance and narrowing rule,,,,How wording changes.
+"Owner, reviewer, date and version",,,,Lifecycle record.

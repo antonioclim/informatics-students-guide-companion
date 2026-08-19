@@ -1,0 +1,13 @@
+﻿field,entry,evidence_or_basis,review_status,guidance
+Authoritative object,,,,Exact filename.
+Version,,,,Semantic version or controlled project version.
+Date,,,,ISO date.
+SHA-256,,,,Digest.
+Source master,,,,Upstream object.
+Derived objects,,,,"PDF, archive, slides, data, figures or companion."
+Content identity check,,,,"Same question, evidence, result and limit."
+StoryRanges and fields state,,,,Updated or pending.
+Proof state,,,,"Technical, Word proof, rejected or final candidate."
+Rights and privacy,,,,Status.
+Supersedes,,,,Prior version.
+"Owner, reviewer and next action",,,,Lifecycle record.
