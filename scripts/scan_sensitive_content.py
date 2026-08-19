@@ -34,7 +34,7 @@ def read_candidate(path: Path):
     suffix = path.suffix.lower()
     if suffix in TEXT_SUFFIXES or path.name in {'.gitignore', '.gitattributes'}:
         yield path.relative_to(ROOT).as_posix(), path.read_text(encoding='utf-8', errors='replace')
-    elif suffix in {'.docx', '.xlsx'}:
+    elif suffix in {'.docx', '.xlsx', '.odg', '.pptx'}:
         try:
             with zipfile.ZipFile(path) as zf:
                 for name in zf.namelist():

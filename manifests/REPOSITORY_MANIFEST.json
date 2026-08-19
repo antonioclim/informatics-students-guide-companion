@@ -1,8 +1,8 @@
 [
   {
     "path": ".gitattributes",
-    "bytes": 168,
-    "sha256": "8808d5d9462475ab3206830445ccc59af768db906efc2e4977cd7746dcd5a8bd",
+    "bytes": 195,
+    "sha256": "64f540096edb6288faf0b2cde6c3cea4b03665c37f53020ebc8f6db685912dd4",
     "suffix": "[none]"
   },
   {
@@ -13,26 +13,20 @@
   },
   {
     "path": ".gitignore",
-    "bytes": 322,
-    "sha256": "784effeec5d73966f2367018f166858752d64bbae254393001de73b254127e1d",
+    "bytes": 341,
+    "sha256": "e563437264f4b16f2d03a3e825c622540523a462bf596a72dec747f6e4462ce7",
     "suffix": "[none]"
   },
   {
     "path": "CITATION.cff",
-    "bytes": 953,
-    "sha256": "c5a3791ae740fd7574f95775b10d1bc8fb5bafefaf3535577de548d385befba5",
+    "bytes": 1041,
+    "sha256": "1eb85fe13f1c23e8b00e833bb7ffe7e5e605c87f1a11c5482933c4372207c97a",
     "suffix": ".cff"
   },
   {
     "path": "CONTRIBUTING.md",
     "bytes": 570,
     "sha256": "36a6add8290607c0bf1b1d5d1c0644655604f4c8f835ba366b92e197de667f12",
-    "suffix": ".md"
-  },
-  {
-    "path": "LICENSE_AND_RIGHTS.md",
-    "bytes": 1346,
-    "sha256": "1efb434e9d164ec34b5c0e69d8686a2df91abb07fc8b31d3a65bc14c0a21a464",
     "suffix": ".md"
   },
   {
@@ -43,20 +37,26 @@
   },
   {
     "path": "PUBLIC_RELEASE_HOLD.md",
-    "bytes": 861,
-    "sha256": "b77ec4033555c528909a11dd89c29757f46d2abde420d88409ef56d2e2b3c486",
+    "bytes": 993,
+    "sha256": "e3de0f4e90a0e580661edf60ce06b2aee9c4d4ffb22ad056861e430b3e6eac58",
     "suffix": ".md"
   },
   {
     "path": "README.md",
-    "bytes": 2178,
-    "sha256": "05f25bcf236bad6cae2c2a2cc98a83308bc9403cb62c2f62a6157f88f081fba0",
+    "bytes": 3049,
+    "sha256": "b808f96122b87613119d3ce2eca31c83d7d945f6cb2c1f6a816750406914a55e",
     "suffix": ".md"
   },
   {
     "path": "REPOSITORY_CONTENT_POLICY.md",
     "bytes": 695,
     "sha256": "73930b24977622da6caae6438fbbabae21994ad10d8ce3bc56737af8401f0d97",
+    "suffix": ".md"
+  },
+  {
+    "path": "RIGHTS_AND_RELEASE_STATUS.md",
+    "bytes": 1713,
+    "sha256": "ff8d3f794a3409491cf47b5af0d9c1960a01bf7a96b5cc5ed33a7131243092c4",
     "suffix": ".md"
   },
   {
@@ -73,8 +73,8 @@
   },
   {
     "path": "VERSION.txt",
-    "bytes": 86,
-    "sha256": "705b6e6c938e50e408ad01c8787363b9d7998f37982495756592c32823acde04",
+    "bytes": 116,
+    "sha256": "d6b274cfec1ceb14e6b3811d80ab40a922e7755d5e0c25650b456a1af9a2a1c2",
     "suffix": ".txt"
   },
   {
@@ -685,8 +685,8 @@
   },
   {
     "path": "companion/06_MAINTENANCE/CHANGELOG.md",
-    "bytes": 1364,
-    "sha256": "ebffda031e4ac24fa24ff07f89aaaa3194790542ef5b4aa81bc4d29e6ad86b45",
+    "bytes": 2200,
+    "sha256": "ec4656f7bf2ed3d9b29eaa52edbe0456a8f360ce8e377b2b5673c6e75033aef0",
     "suffix": ".md"
   },
   {
@@ -709,14 +709,14 @@
   },
   {
     "path": "docs/GITHUB_AND_ZENODO_PLAN.md",
-    "bytes": 1610,
-    "sha256": "8c887a5963ca34ad976d99de7b17fc1f925dd7356c86b04455da0e6504657861",
+    "bytes": 1885,
+    "sha256": "8a0ab823f7a5574493dc6c69bf0a2bc523068ae711aba88db1b5bfbc0482bb41",
     "suffix": ".md"
   },
   {
     "path": "docs/RELEASE_DECISION_MATRIX.md",
-    "bytes": 1102,
-    "sha256": "dde568fbb2f034b702145d6a79d91d992db3d6a82afbbd1344420494337be578",
+    "bytes": 1423,
+    "sha256": "04ce8bf97e097dde446d4c8325b68f5b80731b204ecd28289de23267de796e3e",
     "suffix": ".md"
   },
   {
@@ -1020,39 +1020,351 @@
     "suffix": ".py"
   },
   {
+    "path": "figures/05_SCRIPTS/validate_native_editability.py",
+    "bytes": 5131,
+    "sha256": "bdfbcc756f98b0669d00bccb729da7c1ac69609e15867f4029bf204a8d020683",
+    "suffix": ".py"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_1_Evidence_to_Defence_Architecture_NATIVE_EDITABLE.odg",
+    "bytes": 40083,
+    "sha256": "ee4488f5cc7da3770837e727e9fcf40d688b0703e05c58834d9d2fa2335ce65f",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_2_Advice_Authority_and_Authorship_Map_NATIVE_EDITABLE.odg",
+    "bytes": 25498,
+    "sha256": "8f09e3edd22ffc2f03b6fe9282061f404f08792a7c041bb41af993c059f8ac69",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_1_Topic_Decision_Path_NATIVE_EDITABLE.odg",
+    "bytes": 20887,
+    "sha256": "0bd459ab525e2c76447b1a90b17e6df0e901c87f9948c959434f34b1bec60efb",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_2_SCOPE_Framing_Canvas_NATIVE_EDITABLE.odg",
+    "bytes": 33019,
+    "sha256": "093a1c85b57969d21da2c89ca2d4c355a4f8673e9207617b6f4a1dc502a3066a",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_1_Evidence_Identity_Chain_NATIVE_EDITABLE.odg",
+    "bytes": 24829,
+    "sha256": "89065e304368f740810e7c96e4e42d16cad5f0c29bd3adba0530a20ae7c10937",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_2_CORPUS_Records_Cycle_NATIVE_EDITABLE.odg",
+    "bytes": 27268,
+    "sha256": "38b9074d3ef1eef0e3ab2eab46546127a3817eb31c994e137517974620dc27e1",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_1_Reversible_Driver_to_Test_Chain_NATIVE_EDITABLE.odg",
+    "bytes": 23874,
+    "sha256": "ebf7226f7a9f494a6d5aa1365023cbc91b2810694f7ad398dade8ee99150d864",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_2_DECIDE_Conditional_Commitment_Cycle_NATIVE_EDITABLE.odg",
+    "bytes": 24470,
+    "sha256": "60d3268b77de8ef0bfe870a54f9f8820a1328ec37fda35e26198283766dad1aa",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_1_Candidate_to_Admission_Chain_NATIVE_EDITABLE.odg",
+    "bytes": 35991,
+    "sha256": "9cbd4ec858df4ae9540253d04ec59c9d2fd01d02842e708a158b4451e974f186",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_2_Bounded_Execution_Loop_NATIVE_EDITABLE.odg",
+    "bytes": 32905,
+    "sha256": "e53dfb025d5e2fc189aa4faf7835b0eb90f56dd60dba1da6655add5cc42cd076",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_1_Evidence_to_Claim_Ladder_NATIVE_EDITABLE.odg",
+    "bytes": 31322,
+    "sha256": "a15102ea151cb4dd6635c3131b5e41ed94614485033aa31f9a950b18f3c89d5e",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_2_Claim_Stress_Test_and_Gate_Returns_NATIVE_EDITABLE.odg",
+    "bytes": 35734,
+    "sha256": "dee5694c09981d5b82b36c9b705a9a4d902ac370db624792320244cf95f91c09",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_1_Gate_Records_to_Answer_Architecture_NATIVE_EDITABLE.odg",
+    "bytes": 40946,
+    "sha256": "c649b15be039bd91fce15668478802686308ff103c8d9b33368613b46765e7e2",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_2_Section_and_Paragraph_Contract_NATIVE_EDITABLE.odg",
+    "bytes": 32484,
+    "sha256": "f97001107549cf1ed34e946a127cc4f5f9e3c2444b92811dd594e8af8e77f473",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_1_Semantic_First_Revision_and_Proof_Control_NATIVE_EDITABLE.odg",
+    "bytes": 37291,
+    "sha256": "f097f887177214bedb2e8d4b2d00936f07c91286e1c6df017c9ad45ffaf65a1f",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_2_One_Study_Consistency_and_Metadata_Lock_NATIVE_EDITABLE.odg",
+    "bytes": 38633,
+    "sha256": "f9d891aefd3d7e0b8f55beb3c36e45a92c73688daf20b4cbdd12f3a709b26ccb",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_1_Author_Side_Closure_to_Defence_Ready_Record_NATIVE_EDITABLE.odg",
+    "bytes": 34970,
+    "sha256": "6c98dfd88c48ed3993c301bab0d55de0e532a27520233ef6783a44922de732d0",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_2_One_Bounded_Contribution_Across_Defence_Interfaces_NATIVE_EDITABLE.odg",
+    "bytes": 29661,
+    "sha256": "79f816920dd39e5bcf0343b772132950f26c23a2aa43d72a5b63769ccd0e8d5d",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/07_ODG_NATIVE_EDITABLE_CONSOLIDATED/TISG_RPTD_ALL_18_FIGURES_NATIVE_EDITABLE.odg",
+    "bytes": 78028,
+    "sha256": "3a7d66a85e7f9b6136e9d715de92eea590d0a277b4ab0a99e7014a4e55ccc410",
+    "suffix": ".odg"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_1_Evidence_to_Defence_Architecture_NATIVE_EDITABLE.pptx",
+    "bytes": 14149,
+    "sha256": "4487815c3357f8021ffa367111ef9880e2e8244972958a49676792bb97d214d4",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_2_Advice_Authority_and_Authorship_Map_NATIVE_EDITABLE.pptx",
+    "bytes": 10774,
+    "sha256": "c3dc7735e206632e3de014fe9da48a6874f78a09e5db57dad4da9dbc178b1698",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_1_Topic_Decision_Path_NATIVE_EDITABLE.pptx",
+    "bytes": 10833,
+    "sha256": "df9699e301e96f168ed6e7b5ad84def031e0272fd8d59fd9276c4bcc9875ad38",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_2_SCOPE_Framing_Canvas_NATIVE_EDITABLE.pptx",
+    "bytes": 11144,
+    "sha256": "b38536c9a5af6bc94661330591c31ea0e22a5096413a955b8bdf26a51f541f75",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_1_Evidence_Identity_Chain_NATIVE_EDITABLE.pptx",
+    "bytes": 11384,
+    "sha256": "8db835cd8c3a57bef64df43c64a85652b654d89d1f7004e53b553707091e974b",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_2_CORPUS_Records_Cycle_NATIVE_EDITABLE.pptx",
+    "bytes": 11811,
+    "sha256": "4df2e0d02b34cf498d3ba967c97b1a904c3641d55ad797b2799af2af029d1def",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_1_Reversible_Driver_to_Test_Chain_NATIVE_EDITABLE.pptx",
+    "bytes": 11982,
+    "sha256": "5a5d7e6d50f14f956c397abc4de5a3162a4c144e50cdd482c66fc267912c35a2",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_2_DECIDE_Conditional_Commitment_Cycle_NATIVE_EDITABLE.pptx",
+    "bytes": 11641,
+    "sha256": "e05967524b4a93286527dadd476d5b84e63d1ab751683293df697a77291c6994",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_1_Candidate_to_Admission_Chain_NATIVE_EDITABLE.pptx",
+    "bytes": 12344,
+    "sha256": "5885d829816e9474c7e13d14c6227bbdc562cc741a63024610cbf949dd8b79f2",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_2_Bounded_Execution_Loop_NATIVE_EDITABLE.pptx",
+    "bytes": 12173,
+    "sha256": "09aa53c32c995fd1b34e2b802fc3b0b82b742ed294ff4e6d97031b1885c90a9a",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_1_Evidence_to_Claim_Ladder_NATIVE_EDITABLE.pptx",
+    "bytes": 12201,
+    "sha256": "9797872065bc18ad0408ec9867dd65b5502d424a0b91d34b19b3ac1ede006473",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_2_Claim_Stress_Test_and_Gate_Returns_NATIVE_EDITABLE.pptx",
+    "bytes": 12040,
+    "sha256": "c30275fc8ef105b1e2181c2dde5dd41f98994f8a4fe4a5fb1af5790b1e0627ed",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_1_Gate_Records_to_Answer_Architecture_NATIVE_EDITABLE.pptx",
+    "bytes": 14532,
+    "sha256": "d0197afb705e692ef06a3b6073a3eb3553d6f51e0d641729667c6f9afe434079",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_2_Section_and_Paragraph_Contract_NATIVE_EDITABLE.pptx",
+    "bytes": 11777,
+    "sha256": "b9a67eb7cfc9a982ec0f1c299f851c33a9c3a91f751ec1edef58c06103843569",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_1_Semantic_First_Revision_and_Proof_Control_NATIVE_EDITABLE.pptx",
+    "bytes": 13432,
+    "sha256": "b551e9c5c94c42589435e1bb4206679bb16c6ce70f473307c90da5afe46f8a83",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_2_One_Study_Consistency_and_Metadata_Lock_NATIVE_EDITABLE.pptx",
+    "bytes": 13670,
+    "sha256": "b7fc00ffbbe5e0162fb60f3dbc980b077730a7399379d59b1cba28c972b9e35d",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_1_Author_Side_Closure_to_Defence_Ready_Record_NATIVE_EDITABLE.pptx",
+    "bytes": 11922,
+    "sha256": "6ac451e90b94fcf4a7bd1953c4d463b5615bf27a3d9fd8d01aef3c5d9a04637f",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_2_One_Bounded_Contribution_Across_Defence_Interfaces_NATIVE_EDITABLE.pptx",
+    "bytes": 10991,
+    "sha256": "48b44b93a80a21afcac7c770c0f06681dac3bb3532aedce15817f835d642702d",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/09_PPTX_NATIVE_EDITABLE_CONSOLIDATED/TISG_RPTD_ALL_18_FIGURES_NATIVE_EDITABLE.pptx",
+    "bytes": 96536,
+    "sha256": "d1e0dd9c65c1f42424844c92bafc8830fc7e0005484378f41c9f546e25225a0a",
+    "suffix": ".pptx"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/CONSOLIDATED_NATIVE_EDITABILITY_VALIDATION.json",
+    "bytes": 235,
+    "sha256": "4a43901c4e2e6b721b4504ce7366f2d5e73e75ecbac04b5ac179db4b4d563f75",
+    "suffix": ".json"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABILITY_VALIDATION.csv",
+    "bytes": 2659,
+    "sha256": "806cbff412598b163f01d84fcfa157ecfae1c1b85fb93e04b837552d98bd270b",
+    "suffix": ".csv"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABILITY_VALIDATION.json",
+    "bytes": 15442,
+    "sha256": "b802c627923437a60d3fcd1cec807cf80d78e0a035100e903f6c544f292bc334",
+    "suffix": ".json"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABLE_FIGURE_MANIFEST.csv",
+    "bytes": 15482,
+    "sha256": "ddc2d05ea41362dd14ed5057319e65ca44659eee33745b7f1fe5c68c205c73cc",
+    "suffix": ".csv"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABLE_FIGURE_MANIFEST.json",
+    "bytes": 26776,
+    "sha256": "51ad3cf08f7f9b7b9086f99b00ae48e25feb737cc593e468206b10ced8d58c6f",
+    "suffix": ".json"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/NATIVE_ODG_RENDER_CONTACT_SHEET.png",
+    "bytes": 846262,
+    "sha256": "8079f12d19b2dce83e37a8634ce057cd60f9d5da797905e63c9536c0a686e5cd",
+    "suffix": ".png"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/ODG_OBJECT_LEVEL_EDITABILITY_SMOKE_TEST.csv",
+    "bytes": 1480,
+    "sha256": "87e89a0d78bffeb9480b9744ed8050011abf7a1e9cdf1129a79da498a9dba0c6",
+    "suffix": ".csv"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/ODG_OBJECT_LEVEL_EDITABILITY_SMOKE_TEST.json",
+    "bytes": 3515,
+    "sha256": "270800d6e7319f31d3d65c28c9fe1943cb57b3fdc74a71a42228f836b98d20ce",
+    "suffix": ".json"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/README.md",
+    "bytes": 710,
+    "sha256": "7aecf1a27c9b9277c81b1bc3ee05ee729deb24275e144449821d9b49cfc584e4",
+    "suffix": ".md"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/SOURCE_VS_NATIVE_ODG_COMPARISON_SHEET.png",
+    "bytes": 930991,
+    "sha256": "93b55952749cd5fdf723132b27547ed2c37df69c181cfc3c20ef2eb0cd86e46f",
+    "suffix": ".png"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/UNO_NATIVE_OBJECT_COUNTS.csv",
+    "bytes": 5376,
+    "sha256": "f42a227caf3cb7da083ce65aaa1f27b4439416c1a4df27bd2bd28a6bd4c648d1",
+    "suffix": ".csv"
+  },
+  {
+    "path": "figures/10_NATIVE_EDITABILITY_QA/UNO_NATIVE_OBJECT_COUNTS.json",
+    "bytes": 11507,
+    "sha256": "70377dc161a7581400b35519782ffbde23217963f76276f7ca8826a41e320335",
+    "suffix": ".json"
+  },
+  {
+    "path": "figures/NATIVE_FORMATS_SUPERSESSION_NOTICE.md",
+    "bytes": 541,
+    "sha256": "e0efff3ce2a76fc956102f8fe54c0f8179602df37f2a6a66dcff748fdda69568",
+    "suffix": ".md"
+  },
+  {
     "path": "figures/README.md",
-    "bytes": 386,
-    "sha256": "08f951504fc3b347139626c6bd86054b979026345a43f18da225bcb7339dea39",
+    "bytes": 1393,
+    "sha256": "8f7bf3954fc49b728cd476c9d488437e5337e07c0afc0b5d5079afac4252004c",
     "suffix": ".md"
   },
   {
     "path": "manifests/ASSET_RIGHTS_PRIVACY_REGISTER.csv",
-    "bytes": 2016,
-    "sha256": "1ee5e6bbd0382b351548ef262c9b60ba51616f48215d93cfa809e2bc52cf2856",
+    "bytes": 2827,
+    "sha256": "5af135461ee331c87ea57c4e5454685bd81b98ef90d84746ac51f84469e9ff19",
     "suffix": ".csv"
   },
   {
     "path": "manifests/EXCLUSIONS_REGISTER.csv",
-    "bytes": 1192,
-    "sha256": "8ef457299d5dfb75604fedf7d38e6bc46eecd0e3e958df06dc6623cccb1531a9",
+    "bytes": 1375,
+    "sha256": "fdc23c8a21d70b7804e3de75904aefc856608fc07d7c2052ca2d299906f8f29e",
     "suffix": ".csv"
   },
   {
     "path": "manifests/SOURCE_FILE_DECISION_REGISTER.csv",
-    "bytes": 21461,
-    "sha256": "78acb50af72e8bb4e5ebf8aafb21d281854bf6b8583bafaf54cc41b4df690ea8",
+    "bytes": 31498,
+    "sha256": "3eb4d4f2022d181ef3b353342c160987f86e57269ec8eaaf93b721ce0f677513",
     "suffix": ".csv"
   },
   {
     "path": "scripts/scan_sensitive_content.py",
-    "bytes": 3578,
-    "sha256": "27939ce2931f877fbd626f8c3109e937a1c962dedade44c2b099828cecba5c03",
+    "bytes": 3595,
+    "sha256": "c4ab3399225d7aaa3cfc0621a2c17ee6b07b33b212e25ccb01fb614f39e59c1f",
     "suffix": ".py"
   },
   {
     "path": "scripts/validate_repository.py",
-    "bytes": 5111,
-    "sha256": "230b8a72e1388d772125091a20675ce947f00a702e6da212a927b33539d15d22",
+    "bytes": 7631,
+    "sha256": "b2267ada395c46d51c1f266739aa97003e2270d39f79772f921541d01f5e6b00",
     "suffix": ".py"
   }
 ]

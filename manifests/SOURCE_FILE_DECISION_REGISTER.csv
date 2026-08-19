@@ -1,4 +1,4 @@
-source_path,decision,basis,destination_class
+﻿source_path,decision,basis,destination_class
 companion/00_READ_FIRST/KNOWN_LIMITATIONS.md,include,active v1.1.1 content,private candidate
 companion/00_READ_FIRST/LICENSE_AND_RIGHTS.md,include,active v1.1.1 content,private candidate
 companion/00_READ_FIRST/MAINTENANCE_AND_UPDATE_POLICY.md,include,active v1.1.1 content,private candidate
@@ -164,3 +164,54 @@ figures/05_SCRIPTS/extract_svg_from_master.py,exclude,private build script or no
 figures/05_SCRIPTS/regenerate_png_fallbacks.sh,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
 figures/05_SCRIPTS/validate_figures.py,include,"authoritative asset, derivative fallback, metadata or portable validation",private candidate
 figures/SHA256SUMS.txt,exclude,private build script or non-portable production artefact,internal provenance
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_1_Evidence_to_Defence_Architecture_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_2_Advice_Authority_and_Authorship_Map_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_1_Topic_Decision_Path_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_2_SCOPE_Framing_Canvas_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_1_Evidence_Identity_Chain_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_2_CORPUS_Records_Cycle_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_1_Reversible_Driver_to_Test_Chain_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_2_DECIDE_Conditional_Commitment_Cycle_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_1_Candidate_to_Admission_Chain_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_2_Bounded_Execution_Loop_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_1_Evidence_to_Claim_Ladder_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_2_Claim_Stress_Test_and_Gate_Returns_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_1_Gate_Records_to_Answer_Architecture_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_2_Section_and_Paragraph_Contract_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_1_Semantic_First_Revision_and_Proof_Control_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_2_One_Study_Consistency_and_Metadata_Lock_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_1_Author_Side_Closure_to_Defence_Ready_Record_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_2_One_Bounded_Contribution_Across_Defence_Interfaces_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/07_ODG_NATIVE_EDITABLE_CONSOLIDATED/TISG_RPTD_ALL_18_FIGURES_NATIVE_EDITABLE.odg,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_1_Evidence_to_Defence_Architecture_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_1_2_Advice_Authority_and_Authorship_Map_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_1_Topic_Decision_Path_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_2_2_SCOPE_Framing_Canvas_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_1_Evidence_Identity_Chain_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_3_2_CORPUS_Records_Cycle_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_1_Reversible_Driver_to_Test_Chain_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_4_2_DECIDE_Conditional_Commitment_Cycle_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_1_Candidate_to_Admission_Chain_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_5_2_Bounded_Execution_Loop_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_1_Evidence_to_Claim_Ladder_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_6_2_Claim_Stress_Test_and_Gate_Returns_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_1_Gate_Records_to_Answer_Architecture_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_7_2_Section_and_Paragraph_Contract_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_1_Semantic_First_Revision_and_Proof_Control_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_8_2_One_Study_Consistency_and_Metadata_Lock_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_1_Author_Side_Closure_to_Defence_Ready_Record_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL/Figure_9_2_One_Bounded_Contribution_Across_Defence_Interfaces_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/09_PPTX_NATIVE_EDITABLE_CONSOLIDATED/TISG_RPTD_ALL_18_FIGURES_NATIVE_EDITABLE.pptx,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/CONSOLIDATED_NATIVE_EDITABILITY_VALIDATION.json,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABILITY_VALIDATION.csv,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABILITY_VALIDATION.json,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABLE_FIGURE_MANIFEST.csv,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/NATIVE_EDITABLE_FIGURE_MANIFEST.json,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/NATIVE_ODG_RENDER_CONTACT_SHEET.png,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/ODG_OBJECT_LEVEL_EDITABILITY_SMOKE_TEST.csv,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/ODG_OBJECT_LEVEL_EDITABILITY_SMOKE_TEST.json,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/README.md,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/SOURCE_VS_NATIVE_ODG_COMPARISON_SHEET.png,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/UNO_NATIVE_OBJECT_COUNTS.csv,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/10_NATIVE_EDITABILITY_QA/UNO_NATIVE_OBJECT_COUNTS.json,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate
+figures/NATIVE_FORMATS_SUPERSESSION_NOTICE.md,include,"v3.2 native editable derivative, consolidated file or editability QA",private candidate

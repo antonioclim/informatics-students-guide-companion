@@ -1,5 +1,16 @@
 # Changelog
 
+## Repository candidate 1.1.1-rc.3 - 2026-08-19
+
+- Added 18 native object-level editable ODG files and one consolidated 18-page ODG.
+- Added 18 native object-level editable PPTX files and one consolidated 18-slide PPTX.
+- Added native editability manifests, object counts, text round-trip checks, ODG edit-persistence tests and visual comparison evidence.
+- Preserved SVG as the canonical figure authority and marked the wrapper-based v3.1 ODG/PPTX assets as superseded for editing.
+- Renamed the root rights document to avoid implying that a public licence exists.
+- Extended sensitive-content scanning to ODG and PPTX package XML.
+- Strengthened repository validation for native object counts, absence of embedded picture objects and consolidated file counts.
+- Maintained the private, no-release, no-DOI and no-public-licence hold.
+
 ## 1.1.1 - 2026-08-19
 
 - Migrated the active title from **The Informatics Student’s Guide** to **The Informatics Student’s Guide to Research Projects, Theses and Dissertations**.

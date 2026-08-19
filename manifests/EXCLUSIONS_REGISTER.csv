@@ -7,3 +7,4 @@ OceanofPDF and other unlicensed third-party full texts,excluded,Redistribution r
 "Signed declarations, identity documents and private correspondence",excluded,Personal and administrative sensitivity,Never commit
 "Confidential code, participant data and restricted datasets",excluded,"Privacy, confidentiality and contractual constraints",Never commit
 Figure archive build script with absolute /mnt/data paths,excluded,Private environment paths and non-portable provenance,Use generic validators only
+Wrapper-based ODG/PPTX figure derivatives v3.1,superseded/excluded,Single embedded SVG object did not provide object-level editing,Use v3.2 NATIVE_EDITABLE derivatives only
