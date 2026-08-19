@@ -25,6 +25,8 @@ secrets*
 # Office temporary and lock files
 ~$*.docx
 ~$*.xlsx
+~$*.pptx
+.~lock.*#
 *.tmp
 
 # Local QA outputs
