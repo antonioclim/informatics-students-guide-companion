@@ -1,0 +1,10 @@
+﻿dimension,entry,evidence_or_basis,status
+situation,"A laboratory enables dependency scanning, yet alert generation alone does not explain whether the control becomes part of everyday maintenance.",Synthetic scenario definition,accepted locally
+concern,"A laboratory enables dependency scanning, yet alert generation alone does not explain whether the control becomes part of everyday maintenance.",Problem statement,accepted locally
+object,"The bounded laboratory adoption process, investigated through multiple evidence sources.",Unit definition,accepted locally
+purpose,"How and why did automated dependency scanning become integrated, contested or bypassed within one bounded university software laboratory over a 12-week adoption period?",Question,accepted locally
+evidence,"Triangulation across configuration snapshots, issue records, meeting notes, policy documents and illustrative interviews, including discrepant evidence.",Evidence obligation,accepted locally
+boundary,"One synthetic laboratory, one 12-week period and one workflow; analytic, not statistical, generalisation.",Boundary lock,accepted locally
+contribution,"Within this bounded synthetic case, workflow integration depended on explicit remediation ownership and exception handling more than on alert generation alone.",Illustrative bounded contribution,candidate
+research_question,"How and why did automated dependency scanning become integrated, contested or bypassed within one bounded university software laboratory over a 12-week adoption period?",Route-aligned question,accepted locally
+reopening_trigger,Loss of source triangulation reopens Evidence Gate; a changed case boundary reopens Problem and Design Gates.,Gate return rule,accepted locally

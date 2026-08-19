@@ -1,0 +1,9 @@
+﻿field,entry,evidence_or_basis,status
+example_status,"Synthetic worked example - no real organisation, staff or operational data",Synthetic/composite authorial teaching object,locked
+title,Adoption of automated dependency scanning in one university software laboratory,Worked example title,accepted locally
+dominant_route,case study,Route definition in terminology lock,accepted locally
+research_question,"How and why did automated dependency scanning become integrated, contested or bypassed within one bounded university software laboratory over a 12-week adoption period?",Route-appropriate question,accepted locally
+unit_of_analysis,"The bounded laboratory adoption process, investigated through multiple evidence sources.",Route-specific unit,accepted locally
+boundary,"One synthetic laboratory, one 12-week period and one workflow; analytic, not statistical, generalisation.",Claim boundary,accepted locally
+credible_comparison_or_reference,"Triangulation across configuration snapshots, issue records, meeting notes, policy documents and illustrative interviews, including discrepant evidence.",Design basis,accepted locally
+prohibited_inference,Automated dependency scanning succeeds whenever a tool is enabled.,Hostile boundary test,locked

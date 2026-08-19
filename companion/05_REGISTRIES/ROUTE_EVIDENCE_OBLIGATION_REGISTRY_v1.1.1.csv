@@ -1,0 +1,9 @@
+﻿route,locked_meaning,minimum_evidence_obligation,prohibited_conflation
+build-and-evaluate,Construct and evaluate a bounded artefact or workflow.,"Artefact behaviour, test evidence and operational boundary",Do not infer production deployment or universal usability.
+algorithmic or simulation study,"Evaluate an algorithm, formal problem or simulation under explicit assumptions.","Reference cases, sensitivity, numerical or algorithmic evidence",Do not reduce the route to successful code execution.
+predictive or machine-learning study,Evaluate a predictive system against credible baselines and held-out evidence.,"Data lineage, baseline, held-out performance, calibration and error analysis",Do not equate model training or one aggregate metric with validity.
+quantitative empirical study,Estimate or compare using an explicit empirical design and uncertainty.,"Sampling, estimates, uncertainty, missingness and design boundary",Do not use causal language without a design that supports it.
+qualitative inquiry,Interpret purposively sampled material with an explicit analytic trace and reflexivity.,"Sampling logic, analytic trace, reflexivity, negative cases and bounded interpretation",Do not merge the route with case study or claim statistical generalisation.
+case study,Investigate a bounded case through contextual and multiple evidence sources.,"Case boundary, multiple sources and chain of evidence",Do not treat one case as a population estimate.
+formal evidence synthesis,"Use a protocol to identify, resolve, appraise and synthesise studies.","Search and protocol records, publication-to-study identity, appraisal and synthesis","Do not treat record, publication and study as synonyms."
+hybrid route,Integrate named route components at an explicit integration point.,Separate component evidence plus an explicit integration product,Do not use hybrid as a label for an incoherent mixture.

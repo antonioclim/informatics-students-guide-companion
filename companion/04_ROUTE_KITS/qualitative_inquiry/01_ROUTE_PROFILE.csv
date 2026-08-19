@@ -1,0 +1,9 @@
+﻿field,entry,evidence_or_basis,status
+example_status,"Synthetic worked example - no real participants, quotations or findings",Synthetic/composite authorial teaching object,locked
+title,How novice data analysts describe uncertainty when debugging notebook outputs,Worked example title,accepted locally
+dominant_route,qualitative inquiry,Route definition in terminology lock,accepted locally
+research_question,How do purposively selected novice data analysts describe and manage uncertainty while debugging unexpected notebook outputs?,Route-appropriate question,accepted locally
+unit_of_analysis,"One participant account and its analytically relevant episodes, not one statement counted as an independent observation.",Route-specific unit,accepted locally
+boundary,Illustrative purposive sample of 12 novice analysts in one teaching context; no statistical prevalence claim and no case-study claim.,Claim boundary,accepted locally
+credible_comparison_or_reference,"Constant comparison across accounts, deliberate search for negative cases and reflexive comparison between early and revised interpretations.",Design basis,accepted locally
+prohibited_inference,Novice analysts generally trust automated notebook outputs.,Hostile boundary test,locked

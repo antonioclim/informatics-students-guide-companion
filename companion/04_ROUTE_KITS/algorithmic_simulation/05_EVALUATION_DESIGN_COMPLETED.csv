@@ -1,0 +1,8 @@
+﻿field,entry,evidence_or_basis,status
+minimum_meaningful_claim,"Within the declared synthetic scenarios, token-bucket control reduces false rejection under moderate burstiness relative to fixed-window control, while its queue-tail advantage does not persist under sustained near-saturation load.",Bounded candidate wording,candidate
+comparison_or_reference,"Token-bucket versus fixed-window, checked against hand-calculated limiting cases and a no-control reference.",Declared before interpretation,accepted locally
+evidence_body,"Illustrative values only: at offered load 0.70 and moderate burstiness, the worked dataset records false rejection of 8.4% for fixed-window and 5.7% for token-bucket; at offered load 0.95, the token-bucket scenario shows a materially longer queue tail.",Illustrative values or synthesis only,synthetic
+uncertainty,"Monte Carlo variation, sensitivity to arrival and service assumptions, implementation error and scenario-selection bias.",Route-specific qualification,accepted locally
+counter_evidence,"Illustrative values only: at offered load 0.70 and moderate burstiness, the worked dataset records false rejection of 8.4% for fixed-window and 5.7% for token-bucket; at offered load 0.95, the token-bucket scenario shows a materially longer queue tail.",Adverse or negative component retained,accepted locally
+forbidden_inference,Token-bucket control is superior for production APIs.,Stronger wording rejected,locked
+return_trigger,A failed limiting-case check reopens Execution Gate; an assumption unsupported by the intended context reopens Design Gate.,Gate return rule,accepted locally

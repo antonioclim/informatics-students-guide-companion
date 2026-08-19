@@ -1,0 +1,10 @@
+﻿sequence,control_or_gate,decision_question,official_status
+1,Project Start Pack / opening control,"Is the assessed product, provisional route, access boundary and first decision sufficiently explicit to begin?",Authorial pedagogical control; not an official ASE category
+2,Problem Gate,"Is the problem specific, consequential, feasible and answerable?",Authorial pedagogical control; not an official ASE category
+3,Evidence Gate,"Is the evidence base sufficient, source-verified and fit for the intended decisions?",Authorial pedagogical control; not an official ASE category
+4,Design Gate,Can the approved plan produce evidence for the question under the relevant authority boundaries?,Authorial pedagogical control; not an official ASE category
+5,Execution Gate,"Was the approved plan executed in an inspectable, controlled and reconstructable way?",Authorial pedagogical control; not an official ASE category
+6,Claim Gate,What can the evidence support and where must the claim stop?,Authorial pedagogical control; not an official ASE category
+7,Argument Gate,Does the manuscript contain one reconstructible argument rather than a chronology?,Authorial pedagogical control; not an official ASE category
+8,Editorial Gate,"Do all semantic, bibliographic, technical and rendered layers preserve the same bounded study?",Authorial pedagogical control; not an official ASE category
+9,Defence Readiness Gate,"Do the submitted record, demonstration, slides and oral account describe the same contribution?",Authorial pedagogical control; not an official ASE category

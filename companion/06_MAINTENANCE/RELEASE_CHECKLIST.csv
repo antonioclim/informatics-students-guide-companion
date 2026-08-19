@@ -1,0 +1,11 @@
+check_id,check,criterion,evidence,result,reviewer,date,notes
+REL-01,Source manuscript identity,Source SHA-256 matches the approved master,b275e30b0f9139ae134d7d94fd8c5ccf891fcd95be0e4b562d286d69c9558ab7,PASS,Phase 12 audit,2026-08-19,
+REL-02,Authors,Antonio Clim and Martino Aldrigo appear in active metadata and workbook,,PASS,Phase 12 audit,2026-08-19,No unverified Martino metadata added.
+REL-03,Version status,Package states unpublished authorial candidate,,PASS,Phase 12 audit,2026-08-19,
+REL-04,Template inventory,Every listed template exists once,,PASS,Phase 12 audit,2026-08-19,
+REL-05,Registries,Official source and verification date recorded,,PASS,Phase 12 audit,2026-08-19,Volatile after verification date.
+REL-06,Route examples,All four under-illustrated routes have synthetic worked kits,,PASS,Phase 12 audit,2026-08-19,
+REL-07,Privacy scan,"No credentials, direct identifiers or private account data",,PASS,Phase 12 audit,2026-08-19,
+REL-08,Rights statement,No public licence or release asserted,,PASS,Phase 12 audit,2026-08-19,
+REL-09,DOCX proof,Workbook and examples rendered and visually inspected,,PASS,Phase 12 audit,2026-08-19,Workbook 50 pages and route examples 10 pages; all pages visually inspected; a11y high/medium/low 0/0/0.
+REL-10,Manifest and hashes,All payloads listed and hashed,,PASS,Phase 12 audit,2026-08-19,Manifest and hashes generated during final packaging.

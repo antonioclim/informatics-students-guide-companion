@@ -1,0 +1,9 @@
+﻿field,entry,evidence_or_basis,status
+example_status,"Synthetic worked example - no real participants, deployment or accessibility certification",Synthetic/composite authorial teaching object,locked
+title,Accessibility and response performance of a campus event-notification prototype,Worked example title,accepted locally
+dominant_route,hybrid route,Route definition in terminology lock,accepted locally
+research_question,"Under declared laboratory tasks, how do response performance, task completion and participant explanations jointly characterise the accessibility limits of a campus event-notification prototype?",Route-appropriate question,accepted locally
+unit_of_analysis,"System run, participant task and qualitative feedback episode, kept distinct and integrated only at the joint-display stage.",Route-specific unit,accepted locally
+boundary,"Local prototype, controlled tasks, illustrative sample of 16 participants and no production deployment or universal accessibility claim.",Claim boundary,accepted locally
+credible_comparison_or_reference,"Build-and-evaluate performance targets, quantitative task outcomes and qualitative explanations integrated through a predeclared joint display.",Design basis,accepted locally
+prohibited_inference,The prototype is accessible and ready for campus deployment.,Hostile boundary test,locked
