@@ -1,0 +1,10 @@
+{
+  "repository": "antonioclim/informatics-students-guide-companion",
+  "visibility": "private",
+  "default_branch": "main",
+  "verified_head_commit": "7d570d21a12b739f25fdc586adc8106c92b5d4c2",
+  "verified_on": "2026-08-24",
+  "live_version_before_phase19c_mutation": "1.1.1-rc.3",
+  "external_mutation_recorded_in_payload_build": false,
+  "purpose": "Exact guard for the controlled browser publication workflow"
+}

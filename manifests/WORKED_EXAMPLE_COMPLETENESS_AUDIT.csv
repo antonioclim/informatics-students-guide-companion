@@ -1,0 +1,73 @@
+route,file,source_template,schema_aligned,data_rows,blank_cells,controlled_value_violations,status
+build-and-evaluate,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+build-and-evaluate,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+build-and-evaluate,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+build-and-evaluate,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+build-and-evaluate,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+build-and-evaluate,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+build-and-evaluate,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+build-and-evaluate,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+build-and-evaluate,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+algorithmic or simulation study,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+algorithmic or simulation study,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+algorithmic or simulation study,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+algorithmic or simulation study,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+algorithmic or simulation study,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+algorithmic or simulation study,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+algorithmic or simulation study,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+algorithmic or simulation study,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+algorithmic or simulation study,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+predictive or machine-learning study,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+predictive or machine-learning study,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+predictive or machine-learning study,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+predictive or machine-learning study,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+predictive or machine-learning study,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+predictive or machine-learning study,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+predictive or machine-learning study,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+predictive or machine-learning study,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+predictive or machine-learning study,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+quantitative empirical study,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+quantitative empirical study,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+quantitative empirical study,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+quantitative empirical study,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+quantitative empirical study,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+quantitative empirical study,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+quantitative empirical study,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+quantitative empirical study,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+quantitative empirical study,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+qualitative inquiry,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+qualitative inquiry,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+qualitative inquiry,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+qualitative inquiry,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+qualitative inquiry,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+qualitative inquiry,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+qualitative inquiry,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+qualitative inquiry,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+qualitative inquiry,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+case study,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+case study,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+case study,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+case study,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+case study,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+case study,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+case study,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+case study,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+case study,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+formal evidence synthesis,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+formal evidence synthesis,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+formal evidence synthesis,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+formal evidence synthesis,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+formal evidence synthesis,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+formal evidence synthesis,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+formal evidence synthesis,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+formal evidence synthesis,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+formal evidence synthesis,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS
+hybrid route,01_ROUTE_PROFILE_COMPLETED.csv,custom route profile,custom controlled profile,8,0,0,PASS
+hybrid route,02_SCOPE_CANVAS_MIN_COMPLETED.csv,SCOPE_CANVAS_MIN.csv,yes,9,0,0,PASS
+hybrid route,03_DECIDE_RECORD_MIN_COMPLETED.csv,DECIDE_RECORD_MIN.csv,yes,1,0,0,PASS
+hybrid route,04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,EXECUTION_PROVENANCE_RECORD_FULL.csv,yes,1,0,0,PASS
+hybrid route,05_EVALUATION_DESIGN_FULL_COMPLETED.csv,EVALUATION_DESIGN_RECORD_FULL.csv,yes,12,0,0,PASS
+hybrid route,06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,CLAIM_EVIDENCE_MAP_MIN.csv,yes,1,0,0,PASS
+hybrid route,07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,DEMONSTRATION_RUNBOOK_MIN.csv,yes,1,0,0,PASS
+hybrid route,08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,DEFENCE_QUESTION_MATRIX_MIN.csv,yes,1,0,0,PASS
+hybrid route,09_GATE_RECORD_MIN_COMPLETED.csv,GATE_RECORD_MIN.csv,yes,1,0,0,PASS

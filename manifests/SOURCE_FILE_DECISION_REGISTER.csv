@@ -1,0 +1,6 @@
+source_object,source_sha256,use,included_payload,decision
+Final Publisher Master v3.9.0,14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5,Book–Companion semantic and version binding,No,Use only for binding verification; exclude manuscript
+Final technical proof v3.9.0,35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a,Technical page-state provenance,No,Exclude proof
+Digital Companion 1.2.0 baseline,1cbb43e8b1c7ea929d15179a33c2c0fb0b14ae32c2d8237e11f8a6279c310504,Semantic and file-structure baseline,Transformed,Remove RC and hold state; retain complete DC-A–DC-E content
+Figure Authority v4.3,3c1ea05af05ce28d50195a86b27327c933a6fd719bf76158a60014e6834091ec,Current ODG SVG PPTX and PNG authority,Yes,Include controlled figure assets under CC BY 4.0; exclude duplicate source copies while retaining hashes
+GitHub live baseline,7d570d21a12b739f25fdc586adc8106c92b5d4c2,Pre-mutation safety guard,No,Require exact baseline before controlled Phase 19C mutation
