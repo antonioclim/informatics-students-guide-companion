@@ -1,0 +1,311 @@
+name: Phase 19C controlled publication gate
+
+on:
+  push:
+    branches:
+      - phase19c-release-gate-v120
+    paths:
+      - Students_Guide_Digital_Companion_v1.2.0_PUBLIC_PAYLOAD.zip
+      - Students_Guide_Digital_Companion_v1.2.0_PUBLIC_PAYLOAD.zip.sha256
+
+permissions:
+  contents: write
+
+concurrency:
+  group: students-guide-phase19c-v1.2.0
+  cancel-in-progress: false
+
+jobs:
+  validate-and-stage-main:
+    if: github.actor == 'antonioclim'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out the private staging branch
+        uses: actions/checkout@v4
+        with:
+          ref: phase19c-release-gate-v120
+          fetch-depth: 0
+
+      - name: Validate the frozen payload and stage a clean final main commit
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_SHA: 7d570d21a12b739f25fdc586adc8106c92b5d4c2
+          ZIP_NAME: Students_Guide_Digital_Companion_v1.2.0_PUBLIC_PAYLOAD.zip
+          SUM_NAME: Students_Guide_Digital_Companion_v1.2.0_PUBLIC_PAYLOAD.zip.sha256
+          EXPECTED_FILES: '401'
+          FINAL_BOOK_SHA256: 14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5
+          FINAL_PROOF_SHA256: 35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a
+        run: |
+          set -Eeuo pipefail
+
+          fail() {
+            printf 'PHASE 19C GATE FAILED: %s\n' "$*" >&2
+            exit 1
+          }
+
+          [[ "${GITHUB_ACTOR}" == "antonioclim" ]] || fail "the upload actor is not Antonio Clim"
+          [[ -f "${ZIP_NAME}" ]] || fail "the frozen ZIP is absent"
+          [[ -f "${SUM_NAME}" ]] || fail "the SHA-256 sidecar is absent"
+
+          git fetch origin main --tags --force
+          remote_main="$(git rev-parse origin/main)"
+          [[ "${remote_main}" == "${BASE_SHA}" ]] || fail "main moved from the authorised baseline ${BASE_SHA} to ${remote_main}"
+
+          if git ls-remote --exit-code --tags origin refs/tags/v1.2.0 >/dev/null 2>&1; then
+            fail "tag v1.2.0 already exists"
+          fi
+
+          mapfile -t checksum_lines < "${SUM_NAME}"
+          [[ "${#checksum_lines[@]}" -eq 1 ]] || fail "the checksum sidecar must contain exactly one line"
+          read -r expected_hash expected_name unexpected <<< "${checksum_lines[0]}"
+          expected_name="${expected_name#\*}"
+          [[ "${expected_hash}" =~ ^[0-9a-f]{64}$ ]] || fail "the checksum is not a lower-case SHA-256 value"
+          [[ "${expected_name}" == "${ZIP_NAME}" ]] || fail "the checksum sidecar names an unexpected archive"
+          [[ -z "${unexpected:-}" ]] || fail "the checksum sidecar contains unexpected fields"
+          actual_hash="$(sha256sum "${ZIP_NAME}" | awk '{print $1}')"
+          [[ "${actual_hash}" == "${expected_hash}" ]] || fail "archive SHA-256 mismatch"
+
+          cp -- "${ZIP_NAME}" "${RUNNER_TEMP}/${ZIP_NAME}"
+          payload_dir="${RUNNER_TEMP}/phase19c-payload"
+          verify_dir="${RUNNER_TEMP}/phase19c-verify"
+          rm -rf "${payload_dir}" "${verify_dir}"
+          mkdir -p "${payload_dir}" "${verify_dir}"
+
+          ZIP_PATH="${RUNNER_TEMP}/${ZIP_NAME}" PAYLOAD_DIR="${payload_dir}" python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import os, stat, zipfile
+
+          archive = Path(os.environ['ZIP_PATH'])
+          destination = Path(os.environ['PAYLOAD_DIR'])
+          total = 0
+          folded = {}
+          with zipfile.ZipFile(archive) as zf:
+              members = zf.infolist()
+              if not members:
+                  raise SystemExit('empty archive')
+              for info in members:
+                  raw = info.filename.replace('\\', '/')
+                  path = PurePosixPath(raw)
+                  if raw.startswith('/') or '..' in path.parts:
+                      raise SystemExit(f'unsafe archive path: {raw}')
+                  if info.is_dir():
+                      continue
+                  mode = (info.external_attr >> 16) & 0o170000
+                  if mode == stat.S_IFLNK:
+                      raise SystemExit(f'symbolic link rejected: {raw}')
+                  key = raw.casefold()
+                  if key in folded and folded[key] != raw:
+                      raise SystemExit(f'case-colliding archive paths: {folded[key]} / {raw}')
+                  folded[key] = raw
+                  if info.file_size > 100_000_000:
+                      raise SystemExit(f'oversized member: {raw}')
+                  total += info.file_size
+              if total > 500_000_000:
+                  raise SystemExit('archive expansion exceeds the safety limit')
+              zf.extractall(destination)
+          PY
+
+          PAYLOAD_DIR="${payload_dir}" EXPECTED_FILES="${EXPECTED_FILES}" FINAL_BOOK_SHA256="${FINAL_BOOK_SHA256}" FINAL_PROOF_SHA256="${FINAL_PROOF_SHA256}" python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import hashlib, json, os, re, zipfile
+
+          root = Path(os.environ['PAYLOAD_DIR'])
+          expected_files = int(os.environ['EXPECTED_FILES'])
+          final_book = os.environ['FINAL_BOOK_SHA256']
+          final_proof = os.environ['FINAL_PROOF_SHA256']
+
+          def digest(path):
+              h = hashlib.sha256()
+              with path.open('rb') as stream:
+                  for block in iter(lambda: stream.read(1024 * 1024), b''):
+                      h.update(block)
+              return h.hexdigest()
+
+          files = sorted(p for p in root.rglob('*') if p.is_file())
+          if len(files) != expected_files:
+              raise SystemExit(f'expected {expected_files} files, found {len(files)}')
+
+          required = [
+              'README.md', 'CITATION.cff', 'VERSION.txt', 'SHA256SUMS.txt',
+              'MANIFEST-SHA256.json', 'companion', 'figures', 'manifests', 'scripts'
+          ]
+          for item in required:
+              if not (root / item).exists():
+                  raise SystemExit(f'missing required object: {item}')
+
+          if (root / 'VERSION.txt').read_text(encoding='utf-8').strip() != '1.2.0':
+              raise SystemExit('root VERSION.txt is not 1.2.0')
+
+          citation = (root / 'CITATION.cff').read_text(encoding='utf-8')
+          if '1.2.0' not in citation:
+              raise SystemExit('CITATION.cff does not bind version 1.2.0')
+          if 'Student’s Guide to Research Projects, Theses and Dissertations' not in citation and "Student's Guide to Research Projects, Theses and Dissertations" not in citation:
+              raise SystemExit('CITATION.cff does not contain the final title')
+
+          forbidden_names = re.compile(
+              r'(FINAL_PUBLISHER_MASTER|FINAL_TECHNICAL_PROOF|SUBMISSION_PACKAGE|'
+              r'CORRESPONDENCE|SIGNED_FORM|PERSONAL_DATA|PRIVATE_REVIEW)', re.I
+          )
+          text_chunks = []
+          lower_paths = {}
+          for path in files:
+              relative = path.relative_to(root).as_posix()
+              if forbidden_names.search(relative):
+                  raise SystemExit(f'forbidden public-payload filename: {relative}')
+              folded = relative.casefold()
+              if folded in lower_paths and lower_paths[folded] != relative:
+                  raise SystemExit(f'case collision: {lower_paths[folded]} / {relative}')
+              lower_paths[folded] = relative
+              if path.stat().st_size <= 5_000_000:
+                  try:
+                      text_chunks.append((relative, path.read_text(encoding='utf-8')))
+                  except (UnicodeDecodeError, OSError):
+                      pass
+
+          global_prohibited = [
+              ('release-candidate marker', re.compile(r'\b1\.2\.0[-_ ]?rc\.?\d*\b', re.I)),
+              ('DOI placeholder', re.compile(r'(DOI[_ -]?PLACEHOLDER|10\.5281/zenodo\.(?:XXXX|TBD|0000+)|doi:\s*TBD)', re.I)),
+              ('publication hold', re.compile(r'\bDO NOT PUBLISH\b', re.I)),
+          ]
+          migration_prohibited = [
+              ('stale migration state', re.compile(r'v3\.8\.0\s+(?:planned|open)|planned\s*/\s*open', re.I)),
+              ('unresolved migration status', re.compile(r'\bstatus\s*[:=,]\s*(?:planned|open)\b', re.I)),
+          ]
+          for relative, text in text_chunks:
+              for label, pattern in global_prohibited:
+                  if pattern.search(text):
+                      raise SystemExit(f'{label} remains in {relative}')
+              if re.search(r'(MIGRATION|SUPERSESSION|APPENDIX_OBJECT)', relative, re.I):
+                  for label, pattern in migration_prohibited:
+                      if pattern.search(text):
+                          raise SystemExit(f'{label} remains in {relative}')
+
+          joined = '\n'.join(text for _, text in text_chunks)
+          if final_book not in joined:
+              raise SystemExit('final v3.9.0 book hash is not bound in the payload')
+          if final_proof not in joined:
+              raise SystemExit('final v3.9.0 technical-proof hash is not bound in the payload')
+
+          licence_text = '\n'.join(
+              text for relative, text in text_chunks if 'licen' in PurePosixPath(relative).name.lower()
+          )
+          if 'CC BY 4.0' not in licence_text and 'Creative Commons Attribution 4.0' not in licence_text:
+              raise SystemExit('CC BY 4.0 is not established')
+          if 'MIT License' not in licence_text and 'MIT licence' not in licence_text:
+              raise SystemExit('the MIT licence is not established')
+
+          declared = 0
+          for number, line in enumerate((root / 'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines(), 1):
+              if not line.strip():
+                  continue
+              match = re.match(r'^([0-9a-fA-F]{64})\s+\*?(.+)$', line)
+              if not match:
+                  raise SystemExit(f'invalid SHA256SUMS line {number}')
+              declared += 1
+              expected, relative = match.group(1).lower(), match.group(2).strip()
+              target = root / PurePosixPath(relative)
+              if not target.is_file():
+                  raise SystemExit(f'SHA256SUMS target absent: {relative}')
+              if digest(target) != expected:
+                  raise SystemExit(f'SHA256SUMS mismatch: {relative}')
+          if declared < 390:
+              raise SystemExit(f'implausibly small SHA256SUMS register: {declared}')
+
+          try:
+              json.loads((root / 'MANIFEST-SHA256.json').read_text(encoding='utf-8'))
+          except Exception as exc:
+              raise SystemExit(f'MANIFEST-SHA256.json is invalid: {exc}')
+
+          containers = []
+          for path in files:
+              if path.suffix.lower() not in {'.docx', '.pptx', '.odg'}:
+                  continue
+              containers.append(path)
+              try:
+                  with zipfile.ZipFile(path) as package:
+                      for member in package.namelist():
+                          low = member.lower()
+                          if any(token in low for token in (
+                              'vbaproject.bin', 'activex/', 'oleobject',
+                              'embeddings/', 'basic/', 'scripts/'
+                          )):
+                              raise SystemExit(
+                                  f'active content in {path.relative_to(root).as_posix()}::{member}'
+                              )
+              except zipfile.BadZipFile as exc:
+                  raise SystemExit(f'invalid package container {path}: {exc}')
+          if len(containers) != 57:
+              raise SystemExit(f'expected 57 ODG/PPTX/DOCX containers, found {len(containers)}')
+          PY
+
+          index_file="${RUNNER_TEMP}/phase19c.index"
+          rm -f "${index_file}"
+          GIT_INDEX_FILE="${index_file}" git read-tree --empty
+          GIT_INDEX_FILE="${index_file}" git --git-dir="${GITHUB_WORKSPACE}/.git" --work-tree="${payload_dir}" add -A
+          tree_sha="$(GIT_INDEX_FILE="${index_file}" git write-tree)"
+
+          export GIT_AUTHOR_NAME='github-actions[bot]'
+          export GIT_AUTHOR_EMAIL='41898282+github-actions[bot]@users.noreply.github.com'
+          export GIT_COMMITTER_NAME='github-actions[bot]'
+          export GIT_COMMITTER_EMAIL='41898282+github-actions[bot]@users.noreply.github.com'
+          clean_commit="$(printf '%s\n' 'Publish Student’s Guide Digital Companion v1.2.0' | git commit-tree "${tree_sha}" -p "${BASE_SHA}")"
+
+          committed_files="$(git ls-tree -r --name-only "${clean_commit}" | wc -l | tr -d ' ')"
+          [[ "${committed_files}" == "${EXPECTED_FILES}" ]] || fail "clean commit contains ${committed_files} files"
+
+          git archive "${clean_commit}" | tar -x -C "${verify_dir}"
+          PAYLOAD_DIR="${payload_dir}" VERIFY_DIR="${verify_dir}" python - <<'PY'
+          from pathlib import Path
+          import hashlib, os
+
+          def inventory(root):
+              result = {}
+              for path in sorted(p for p in root.rglob('*') if p.is_file()):
+                  result[path.relative_to(root).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
+              return result
+
+          source = inventory(Path(os.environ['PAYLOAD_DIR']))
+          rebuilt = inventory(Path(os.environ['VERIFY_DIR']))
+          if source != rebuilt:
+              missing = sorted(set(source) - set(rebuilt))[:20]
+              extra = sorted(set(rebuilt) - set(source))[:20]
+              changed = sorted(k for k in set(source) & set(rebuilt) if source[k] != rebuilt[k])[:20]
+              raise SystemExit(f'clean-commit reconstruction mismatch: missing={missing}, extra={extra}, changed={changed}')
+          PY
+
+          git fetch origin main --force
+          latest_main="$(git rev-parse origin/main)"
+          [[ "${latest_main}" == "${BASE_SHA}" ]] || fail "main changed during validation"
+
+          git push --force-with-lease="refs/heads/main:${BASE_SHA}" origin "${clean_commit}:refs/heads/main"
+          published_main="$(git ls-remote origin refs/heads/main | awk '{print $1}')"
+          [[ "${published_main}" == "${clean_commit}" ]] || fail "remote main does not equal the clean final commit"
+
+          {
+            echo '## Phase 19C private staging PASS'
+            echo
+            echo "- Final main commit: \`${clean_commit}\`"
+            echo "- Public-payload archive SHA-256: \`${actual_hash}\`"
+            echo "- Repository files: ${EXPECTED_FILES}"
+            echo '- Tag and Release were intentionally not created by the bot.'
+            echo '- Repository visibility remains private until Antonio Clim completes the browser release workflow.'
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+          # Remove all temporary Phase 19C branches. Failures here do not alter the validated main commit.
+          for ref in \
+            phase19c-release-gate-v120 \
+            phase19c-v1.2.0-final-browser-gate \
+            phase19c-v1.2.0-controlled-upload \
+            phase19c-v1.2.0-browser-upload \
+            phase19c-v1.2.0-final-upload \
+            phase19c-v1.2.0-final-staging \
+            phase19c-v1.2.0-upload-gate \
+            phase19c-v1.2.0-gated-browser-upload \
+            phase19c-v1.2.0-final-20260824 \
+            phase19c-v1.2.0-final; do
+            gh api --silent -X DELETE "repos/${GITHUB_REPOSITORY}/git/refs/heads/${ref}" >/dev/null 2>&1 || true
+          done
+          gh api --silent -X DELETE "repos/${GITHUB_REPOSITORY}/git/refs/heads/phase19c%2Fv1.2.0-final" >/dev/null 2>&1 || true
