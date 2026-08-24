@@ -1,13 +1,9 @@
-name: finalise-doi-reconciliation
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+name: validate-public-release
+on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: write
 jobs:
-  reconcile:
+  validate:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
@@ -16,20 +12,19 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyyaml
-      - name: Install final validation workflow
-        run: |
-          python - <<'PY'
-          import base64
-          from pathlib import Path
-          data = base64.b64decode("bmFtZTogdmFsaWRhdGUtcHVibGljLXJlbGVhc2UKb246IFtwdXNoLCBwdWxsX3JlcXVlc3QsIHdvcmtmbG93X2Rpc3BhdGNoXQpqb2JzOgogIHZhbGlkYXRlOgogICAgcnVucy1vbjogdWJ1bnR1LWxhdGVzdAogICAgc3RlcHM6CiAgICAgIC0gdXNlczogYWN0aW9ucy9jaGVja291dEB2NAogICAgICAtIHVzZXM6IGFjdGlvbnMvc2V0dXAtcHl0aG9uQHY1CiAgICAgICAgd2l0aDoKICAgICAgICAgIHB5dGhvbi12ZXJzaW9uOiAiMy4xMiIKICAgICAgLSBydW46IHBpcCBpbnN0YWxsIHB5eWFtbAogICAgICAtIHJ1bjogcHl0aG9uIHNjcmlwdHMvdmFsaWRhdGVfcmVsZWFzZV9jYW5kaWRhdGUucHkK")
-          Path(".github/workflows/validate.yml").write_bytes(data)
-          PY
-      - run: python scripts/generate_manifest.py
-      - run: python scripts/validate_release_candidate.py
-      - name: Commit final workflow and refreshed manifests
+      - name: Refresh deterministic manifests
+        run: python scripts/generate_manifest.py
+      - name: Validate public release
+        run: python scripts/validate_release_candidate.py
+      - name: Commit refreshed manifests
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/workflows/validate.yml manifests/REPOSITORY_MANIFEST.csv manifests/REPOSITORY_MANIFEST.json manifests/REPOSITORY_SHA256.txt SHA256SUMS.txt
-          git commit -m "Refresh manifests after DOI reconciliation"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git add manifests/REPOSITORY_MANIFEST.csv manifests/REPOSITORY_MANIFEST.json manifests/REPOSITORY_SHA256.txt SHA256SUMS.txt
+          if git diff --cached --quiet; then
+            echo "Manifest files already current."
+          else
+            git commit -m "Refresh manifests after metadata update"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
