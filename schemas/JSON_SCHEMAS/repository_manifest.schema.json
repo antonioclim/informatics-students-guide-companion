@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Repository manifest",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "path",
+      "bytes",
+      "sha256",
+      "category"
+    ],
+    "properties": {
+      "path": {
+        "type": "string"
+      },
+      "bytes": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "category": {
+        "type": "string"
+      }
+    }
+  }
+}

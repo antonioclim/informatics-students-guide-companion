@@ -1,12 +1,4 @@
-version=1.1.1
-date=2026-08-19
-status=unpublished_authorial_candidate
-title=The Informatics Student’s Guide to Research Projects, Theses and Dissertations
-subtitle=From Topic Selection to Evidence, Implementation, Writing and Defence
-authors=Antonio Clim and Martino Aldrigo
-source_master=TISG_RPTD_FINAL_ASE_X5_v3.1_2026-08-19.docx
-source_master_sha256=b275e30b0f9139ae134d7d94fd8c5ccf891fcd95be0e4b562d286d69c9558ab7
-historical_baseline_sha256=1761d5ffa598bc64ffcf8c9c44ef3ff67bb420ed7a7e6984cc8aad2b397d28a9
-public_release=false
-public_doi=false
-public_licence=false
+1.2.0
+Book binding: v3.9.0 — Final Publisher Master
+Figure authority: v4.3
+Package freeze date: 24 August 2026

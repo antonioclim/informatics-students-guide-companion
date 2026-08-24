@@ -1,0 +1,9 @@
+field,entry,evidence_or_basis,review_status,guidance
+Assessed product,Illustrative thesis or research project,Synthetic teaching scenario,accepted locally,Name the exact assessed product.
+Working title,Sensitivity of API admission-control policies under bursty synthetic workloads,Synthetic title,accepted locally,Use the exact current title.
+Dominant route,algorithmic or simulation study,Locked route vocabulary,accepted locally,Select one of the eight routes.
+Unit of analysis,"One simulation scenario defined by policy, offered load, burst factor, service distribution and random seed.",Route-specific unit definition,accepted locally,Name the unit on which observations or interpretations are made.
+Research question,"Under declared arrival, service and burst assumptions, how do token-bucket and fixed-window policies differ in false rejection, admitted load, queue-tail behaviour and overflow risk?",Route-aligned question pattern,accepted locally,Write one bounded route-aligned question.
+Core evidence body,"Token-bucket versus fixed-window, checked against hand-calculated limiting cases and a no-control reference.",Route-specific evidence obligation,accepted locally,Name the evidence required for the principal claim.
+Principal uncertainty,"Monte Carlo variation, sensitivity to arrival and service assumptions, implementation error and scenario-selection bias.",Synthetic route boundary,accepted locally,State the main uncertainty that must remain visible.
+Forbidden inference,Token-bucket control is superior for production APIs.,Hostile boundary test,accepted locally,Name the attractive claim not authorised by the design.

@@ -1,0 +1,10 @@
+field,entry,evidence_or_basis,review_status,guidance
+Situation,,,,What concrete context has been observed?
+Concern,,,,What consequential problem or gap exists?
+Object,,,,"What artefact, population, corpus, process or case is studied?"
+Purpose,,,,"What will be built, tested, compared, explained or synthesised?"
+Evidence,,,,What evidence could answer the question?
+Boundary,,,,What is excluded and where does transfer stop?
+Contribution,,,,What is the smallest defensible contribution?
+Research question,,,,Write one route-aligned question.
+Reopening trigger,,,,"What finding would force narrowing, pivoting or stopping?"

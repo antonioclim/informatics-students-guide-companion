@@ -1,0 +1,15 @@
+field,entry,evidence_or_basis,review_status,guidance
+Sprint identifier,,,,Stable identifier.
+Critical uncertainty,,,,Most costly unresolved assumption.
+Why this uncertainty first,,,,Decision consequence and dependency.
+Bounded action,,,,Smallest safe test.
+Starting state,,,,"Version, data, environment or protocol."
+Authority and safety,,,,"Permissions, privacy and irreversible-action controls."
+Evidence to retain,,,,"Logs, sample, screenshot, decision trace, output or observation."
+Acceptance criterion,,,,Declared before outcome.
+Failure criterion,,,,Declared before outcome.
+Outcome,,,,Observed result without interpretation inflation.
+Decision,,,,"Continue, narrow, pivot or stop."
+Objects to update,,,,"SCOPE, CORPUS, DECIDE or another record."
+Gate reopened,,,,Earliest responsible gate.
+"Owner, reviewer, dates and version",,,,Complete lifecycle.

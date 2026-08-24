@@ -1,0 +1,9 @@
+field,entry,evidence_or_basis,review_status,guidance
+Assessed product,Illustrative thesis or research project,Synthetic teaching scenario,accepted locally,Name the exact assessed product.
+Working title,Accessibility and response performance of a campus event-notification prototype,Synthetic title,accepted locally,Use the exact current title.
+Dominant route,hybrid route,Locked route vocabulary,accepted locally,Select one of the eight routes.
+Unit of analysis,"System run, participant task and qualitative feedback episode, kept distinct and integrated only at the joint-display stage.",Route-specific unit definition,accepted locally,Name the unit on which observations or interpretations are made.
+Research question,"Under declared laboratory tasks, how do response performance, task completion and participant explanations jointly characterise the accessibility limits of a campus event-notification prototype?",Route-aligned question pattern,accepted locally,Write one bounded route-aligned question.
+Core evidence body,"Build-and-evaluate performance targets, quantitative task outcomes and qualitative explanations integrated through a predeclared joint display.",Route-specific evidence obligation,accepted locally,Name the evidence required for the principal claim.
+Principal uncertainty,"Synthetic sample, local prototype, limited assistive-technology coverage and integration choices.",Synthetic route boundary,accepted locally,State the main uncertainty that must remain visible.
+Forbidden inference,The prototype is accessible and ready for campus deployment.,Hostile boundary test,accepted locally,Name the attractive claim not authorised by the design.

@@ -1,0 +1,7 @@
+check_id,stop_condition,affected_gate,required_action,closure_evidence,status
+AI-STOP-01,A cited source cannot be resolved,Evidence Gate,Remove or replace the unsupported claim and repair the corpus record,Verified source identity and revised claim map,
+AI-STOP-02,A calculation or analysis cannot be reproduced independently,Execution or Claim Gate,"Reconstruct the method, rerun the analysis or narrow the claim",Independent recomputation and retained execution record,
+AI-STOP-03,Generated code cannot be explained or tested,Design or Execution Gate,"Isolate, inspect, test and document the code before retention","Tests, provenance and student explanation",
+AI-STOP-04,Rights or confidentiality remain unresolved,Design or Editorial Gate,"Block input, distribution or release and obtain competent clarification",Dated rights or confidentiality decision,
+AI-STOP-05,A consequential use is missing from disclosure,Editorial or Defence Readiness Gate,Repair TRACE and the current official declaration,Consistent TRACE and declaration,
+AI-STOP-06,The student cannot defend the intervention orally,Earliest responsible gate,"Remove, relearn or reconstruct the affected work",Successful independent explanation and evidence retrieval,

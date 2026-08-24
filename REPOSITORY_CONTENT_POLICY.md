@@ -1,11 +1,5 @@
 # Repository content policy
 
-Files enter the candidate only if they satisfy all five tests:
+A file may enter the public release only when it is necessary for companion use, figure reuse or validation, has a traceable authorial or redistributable basis, contains no unapproved personal or confidential material and has a clear maintenance and supersession path.
 
-1. **Purpose:** necessary for companion use, figure reuse or release validation.
-2. **Authority:** derived from the accepted authorial master or the active companion candidate.
-3. **Rights:** authorial or otherwise redistributable under an approved decision.
-4. **Privacy:** contains no unapproved personal, confidential or restricted material.
-5. **Maintenance:** has an owner, version and supersession path.
-
-The repository is not an archive of the complete editorial process. Phase packages, full handovers, superseded chapter drafts, private correspondence and third-party full texts are excluded.
+The repository is not an archive of the complete editorial process. Manuscripts, proofs, publisher correspondence, signed forms, personal data, phase handovers, superseded working drafts, restricted full texts and real student dossiers remain excluded.

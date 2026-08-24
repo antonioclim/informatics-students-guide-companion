@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Decision identifier,,,,Stable ID.
+Define,,,,State the decision in one sentence.
+Establish,,,,Evidence and authority boundary.
+Construct,,,,"Credible alternatives, including a simpler option."
+Inspect,,,,"Assumptions, risks, adverse consequences and reversibility."
+Decide conditionally,,,,Selected alternative and trade-off.
+Evaluate early,,,,Test and acceptance criterion.
+Reopening trigger,,,,Result that invalidates or narrows the decision.
+Affected objects,,,,"Plan, method, data, evaluation, claim and records."
+Owner,,,,Responsible student.
+Reviewer or authority,,,,Role and decision.
+"Date, version and status",,,,Lifecycle record.

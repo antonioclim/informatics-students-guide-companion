@@ -1,9 +1,0 @@
-﻿field,entry,evidence_or_basis,status
-example_status,Synthetic worked example - not empirical evidence and not reusable as a result,Synthetic/composite authorial teaching object,locked
-title,Sensitivity of API admission-control policies under bursty synthetic workloads,Worked example title,accepted locally
-dominant_route,algorithmic or simulation study,Route definition in terminology lock,accepted locally
-research_question,"Under declared arrival, service and burst assumptions, how do token-bucket and fixed-window policies differ in false rejection, admitted load, queue-tail behaviour and overflow risk?",Route-appropriate question,accepted locally
-unit_of_analysis,"One simulation scenario defined by policy, offered load, burst factor, service distribution and random seed.",Route-specific unit,accepted locally
-boundary,"Synthetic discrete-event simulation; one service pool; no production traffic, user data or deployment claim.",Claim boundary,accepted locally
-credible_comparison_or_reference,"Token-bucket versus fixed-window, checked against hand-calculated limiting cases and a no-control reference.",Design basis,accepted locally
-prohibited_inference,Token-bucket control is superior for production APIs.,Hostile boundary test,locked

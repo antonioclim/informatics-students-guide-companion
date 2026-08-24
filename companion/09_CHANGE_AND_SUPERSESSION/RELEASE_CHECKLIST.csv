@@ -1,0 +1,8 @@
+gate,required_evidence,owner,status,date,note
+Content freeze,Digital Companion v1.2.0 payload and manifests stable,Antonio Clim,CLOSED,2026-08-24,402-file public payload
+Book binding,Final Publisher Master v3.9.0 and technical proof hashes verified,Antonio Clim,CLOSED,2026-08-24,Manuscript and proof excluded from repository
+Rights and licensing,CC BY 4.0 plus MIT file-class decision recorded,Antonio Clim,CLOSED,2026-08-24,See FILE_CLASS_LICENCE_REGISTER.csv
+Privacy and sensitive-content review,Automated medium-threshold scan plus contextual review,Antonio Clim,CLOSED,2026-08-24,No detected failing patterns
+Figure authority,ODG SVG PPTX and PNG assets reconciled to v4.3,Antonio Clim,CLOSED,2026-08-24,Figure archive hash recorded
+Repository publication,Commit tag Release asset Actions and anonymous access verified after browser mutation,Antonio Clim,POST_PUBLICATION_VERIFY,,Do not mark closed before live verification
+Zenodo archival record,Version 1.2.0 metadata files DOI and public access verified after publication,Antonio Clim,PHASE19D,,No DOI asserted in this package

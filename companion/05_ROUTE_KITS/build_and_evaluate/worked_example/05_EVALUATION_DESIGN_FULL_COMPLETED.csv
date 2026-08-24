@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,CREATE-EVAL-01,Synthetic route-specific basis,accepted locally,Stable ID.
+Minimum meaningful claim,"Within the declared synthetic tasks, the prototype prevents the tested invalid and duplicate submissions and preserves a recoverable audit path more consistently than the manual baseline.",Synthetic route-specific basis,accepted locally,Exact candidate wording.
+Consequence if wrong,The project would overstate the route-specific contribution.,Synthetic route-specific basis,accepted locally,Why the claim deserves scrutiny.
+Route and unit,"build-and-evaluate | One scripted submission task and its resulting validation, audit and recovery record.",Synthetic route-specific basis,accepted locally,Route-specific evaluation object.
+Comparison or reference,"Manual shared-folder baseline versus the prototype under the same synthetic task set, including invalid, duplicate and interrupted submissions.",Synthetic route-specific basis,accepted locally,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,"Within the declared synthetic tasks, the prototype prevents the tested invalid and duplicate submissions and preserves a recoverable audit path more consistently than the manual baseline.",Synthetic route-specific basis,accepted locally,All required evidence objects.
+"Metrics, estimates or analytic outputs",Route-appropriate synthetic outputs only,Synthetic route-specific basis,accepted locally,With units and definitions.
+Uncertainty,"Limited task coverage, implementation defects, laboratory environment and absence of real users or adversarial security testing.",Synthetic route-specific basis,accepted locally,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,The interrupted-upload case required manual recovery and one accessibility defect remained open.,Synthetic route-specific basis,accepted locally,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check","Run valid, invalid, duplicate and interrupted submissions against a frozen synthetic set and inspect every retained record.",Synthetic route-specific basis,accepted locally,Proportionate independent challenge.
+Acceptance and narrowing rule,Accept only within the declared boundary; reject the stronger wording: The prototype is ready for institutional production use.,Synthetic route-specific basis,accepted locally,How wording changes.
+"Owner, reviewer, date and version",Student role | synthetic reviewer | 2026-08-23 | 1.0,Synthetic route-specific basis,accepted locally,Lifecycle record.

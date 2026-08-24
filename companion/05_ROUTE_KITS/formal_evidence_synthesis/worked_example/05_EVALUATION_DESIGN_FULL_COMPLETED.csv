@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,SYNTHESISE-EVAL-01,Synthetic route-specific basis,accepted locally,Stable ID.
+Minimum meaningful claim,"Within the synthetic eligible study set, immediate diagnostic feedback is associated with short-task correction outcomes more consistently than with durable learning outcomes, which remain sparsely measured.",Synthetic route-specific basis,accepted locally,Exact candidate wording.
+Consequence if wrong,The project would overstate the route-specific contribution.,Synthetic route-specific basis,accepted locally,Why the claim deserves scrutiny.
+Route and unit,"formal evidence synthesis | One underlying study, resolved across all related publications and records.",Synthetic route-specific basis,accepted locally,Route-specific evaluation object.
+Comparison or reference,"Protocol-defined eligibility, duplicate and companion-publication resolution, appraisal and synthesis by feedback mechanism and outcome class.",Synthetic route-specific basis,accepted locally,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,"Within the synthetic eligible study set, immediate diagnostic feedback is associated with short-task correction outcomes more consistently than with durable learning outcomes, which remain sparsely measured.",Synthetic route-specific basis,accepted locally,All required evidence objects.
+"Metrics, estimates or analytic outputs",Route-appropriate synthetic outputs only,Synthetic route-specific basis,accepted locally,With units and definitions.
+Uncertainty,"Synthetic corpus, illustrative searches, study heterogeneity, publication-to-study resolution and no quantitative pooling.",Synthetic route-specific basis,accepted locally,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,Several studies report no durable learning advantage and one companion publication reverses the apparent sample count.,Synthetic route-specific basis,accepted locally,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check","Run one database query, resolve a duplicate publication cluster and test the extraction form before the full search.",Synthetic route-specific basis,accepted locally,Proportionate independent challenge.
+Acceptance and narrowing rule,Accept only within the declared boundary; reject the stronger wording: Automated feedback improves programming education overall.,Synthetic route-specific basis,accepted locally,How wording changes.
+"Owner, reviewer, date and version",Student role | synthetic reviewer | 2026-08-23 | 1.0,Synthetic route-specific basis,accepted locally,Lifecycle record.

@@ -1,0 +1,30 @@
+{
+  "title": "Student’s Guide Digital Companion",
+  "upload_type": "other",
+  "description": "Public Digital Companion to <i>Student’s Guide to Research Projects, Theses and Dissertations: From Topic Selection to Evidence, Implementation, Writing and Defence</i> by Antonio Clim and Martino Aldrigo. Curated by Antonio Clim. Version 1.2.0. Documentation, the workbook, templates, synthetic examples, schemas, registers and figure resources are licensed under CC BY 4.0; scripts and code are licensed under MIT.",
+  "creators": [
+    {
+      "name": "Clim, Antonio",
+      "orcid": "0000-0003-4745-0431",
+      "affiliation": "Department of Economic Informatics and Cybernetics, Bucharest University of Economic Studies"
+    }
+  ],
+  "version": "1.2.0",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "research projects",
+    "theses",
+    "dissertations",
+    "informatics education",
+    "research methods",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/antonioclim/informatics-students-guide-companion",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ]
+}

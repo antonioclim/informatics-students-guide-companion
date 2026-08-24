@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Record identifier,,,,Link to CORPUS.
+Verified source identity,,,,"Authors, date, title, venue, DOI or official URL."
+Source class,,,,"Study, standard, regulation, documentation, dataset or other."
+Question addressed,,,,What the source investigates or governs.
+Method or authority basis,,,,How the source produces knowledge or authority.
+"Population, case or scope",,,,Source-specific boundary.
+Finding or requirement,,,,Precise statement in paraphrase.
+Load-bearing use,,,,Claim or decision it supports.
+What it does not support,,,,Explicit source-fit boundary.
+Contradictions or caveats,,,,Internal or external limitations.
+Version or current status,,,,"Retraction, update, supersession or amendment status."
+Reader verification,,,,Location in original and verification date.

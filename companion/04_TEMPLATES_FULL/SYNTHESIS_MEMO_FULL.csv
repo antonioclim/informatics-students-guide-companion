@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Memo identifier,,,,Stable identifier.
+Question or decision,,,,What the synthesis informs.
+Included source/study set,,,,Stable IDs.
+Identity resolution,,,,Publication-to-study mapping where relevant.
+Synthesis method,,,,"Narrative, thematic, tabular, quantitative or other declared method."
+Pattern,,,,Supported convergence.
+Contradiction,,,,Disagreement or incompatible result.
+Uncertainty,,,,"Missing, weak or indirect evidence."
+Gap wording,,,,"Bounded finding, not a universal absence claim."
+Project consequence,,,,"Proceed, revise question, change design or suspend claim."
+Claim boundary,,,,What the memo cannot support.
+"Reviewer, date and version",,,,Lifecycle record.

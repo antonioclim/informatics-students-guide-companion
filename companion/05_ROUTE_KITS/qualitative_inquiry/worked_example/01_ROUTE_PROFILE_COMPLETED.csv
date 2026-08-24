@@ -1,0 +1,9 @@
+field,entry,evidence_or_basis,review_status,guidance
+Assessed product,Illustrative thesis or research project,Synthetic teaching scenario,accepted locally,Name the exact assessed product.
+Working title,How novice data analysts describe uncertainty when debugging notebook outputs,Synthetic title,accepted locally,Use the exact current title.
+Dominant route,qualitative inquiry,Locked route vocabulary,accepted locally,Select one of the eight routes.
+Unit of analysis,"One participant account and its analytically relevant episodes, not one statement counted as an independent observation.",Route-specific unit definition,accepted locally,Name the unit on which observations or interpretations are made.
+Research question,How do purposively selected novice data analysts describe and manage uncertainty while debugging unexpected notebook outputs?,Route-aligned question pattern,accepted locally,Write one bounded route-aligned question.
+Core evidence body,"Constant comparison across accounts, deliberate search for negative cases and reflexive comparison between early and revised interpretations.",Route-specific evidence obligation,accepted locally,Name the evidence required for the principal claim.
+Principal uncertainty,"Synthetic accounts, interpretive dependence, sampling boundary and absence of real participant validation.",Synthetic route boundary,accepted locally,State the main uncertainty that must remain visible.
+Forbidden inference,Novice analysts generally trust automated notebook outputs.,Hostile boundary test,accepted locally,Name the attractive claim not authorised by the design.

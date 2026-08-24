@@ -1,0 +1,9 @@
+v4.3
+Status: released figure authority
+Authority freeze date: 23 August 2026
+Public package freeze date: 24 August 2026
+Native editable authority: ODG
+Publication derivative: SVG
+Editable derivative: PPTX
+Fallback: PNG 600 ppi
+Licence: CC BY 4.0 for figure assets; MIT for scripts

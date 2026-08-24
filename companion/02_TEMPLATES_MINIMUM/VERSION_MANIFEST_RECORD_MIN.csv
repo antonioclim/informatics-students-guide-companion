@@ -1,9 +1,0 @@
-﻿field,entry,evidence_or_basis,review_status,guidance
-Authoritative object,,,,Name the source-of-truth file.
-Version,,,,Use an explicit version identifier.
-Date,,,,Use ISO date in filenames.
-SHA-256,,,,Record the digest.
-Derived objects,,,,"List PDF, archive, slides or data derivatives."
-Content identity,,,,"Confirm the same question, evidence, result and limitation."
-Rights and privacy,,,,"Confirm access, licence, consent and redaction status."
-Status and next action,,,,Name the current state and next authorised action.

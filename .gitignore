@@ -1,35 +1,14 @@
-# Operating system and editors
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
-
-# Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.venv/
-venv/
-
-# Credentials and local configuration
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*_working*
+*_proof*.pdf
+*_PUBLISHER_MASTER*.docx
+*.eml
+*signed*
+*correspondence*
 .env
 .env.*
-*.pem
-*.key
-*.p12
-*.pfx
-credentials*
-secrets*
-
-# Office temporary and lock files
-~$*.docx
-~$*.xlsx
-~$*.pptx
-.~lock.*#
-*.tmp
-
-# Local QA outputs
-_qa/
-_build/
-*.log

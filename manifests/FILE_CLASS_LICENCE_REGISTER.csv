@@ -1,0 +1,8 @@
+file_class,path_pattern,licence,scope_note
+Documentation,*.md; docs/**; companion/**.md,CC BY 4.0,Excludes third-party material whose file states a narrower right
+Workbook,companion/01_WORKBOOK/*.docx,CC BY 4.0,Reusable companion workbook
+Templates synthetic examples schemas and registers,companion/**.csv; manifests/**.csv; schemas/**,CC BY 4.0,No real participant data or restricted full text
+Figure assets,figures/**/*.odg; figures/**/*.svg; figures/**/*.pptx; figures/**/*.png,CC BY 4.0,Controlled ODG authority and released derivatives
+Code and scripts,scripts/**; figures/06_SOURCE_AND_PROVENANCE/*.py; .github/workflows/**,MIT,Executable validation and figure-build code
+Repository metadata,CITATION.cff; VERSION*; .zenodo.json; manifests/*.json; *SHA256*,CC BY 4.0,Administrative metadata and integrity registers
+Excluded private classes,book manuscript; technical proof; publisher-facing files; correspondence; signed forms; personal data,NOT DISTRIBUTED,Must not enter GitHub or Zenodo payloads

@@ -1,0 +1,9 @@
+field,entry,evidence_or_basis,review_status,guidance
+Assessed product,Illustrative thesis or research project,Synthetic teaching scenario,accepted locally,Name the exact assessed product.
+Working title,Evidence synthesis of automated feedback for introductory programming exercises,Synthetic title,accepted locally,Use the exact current title.
+Dominant route,formal evidence synthesis,Locked route vocabulary,accepted locally,Select one of the eight routes.
+Unit of analysis,"One underlying study, resolved across all related publications and records.",Route-specific unit definition,accepted locally,Name the unit on which observations or interpretations are made.
+Research question,"What study designs, feedback mechanisms and bounded learning outcomes are reported in eligible studies of automated feedback for introductory programming exercises?",Route-aligned question pattern,accepted locally,Write one bounded route-aligned question.
+Core evidence body,"Protocol-defined eligibility, duplicate and companion-publication resolution, appraisal and synthesis by feedback mechanism and outcome class.",Route-specific evidence obligation,accepted locally,Name the evidence required for the principal claim.
+Principal uncertainty,"Synthetic corpus, illustrative searches, study heterogeneity, publication-to-study resolution and no quantitative pooling.",Synthetic route boundary,accepted locally,State the main uncertainty that must remain visible.
+Forbidden inference,Automated feedback improves programming education overall.,Hostile boundary test,accepted locally,Name the attractive claim not authorised by the design.

@@ -1,8 +1,0 @@
-﻿field,entry,evidence_or_basis,status
-minimum_meaningful_claim,"Under the declared laboratory tasks, the prototype met the local response target in most sessions, while integrated task and feedback evidence identified comprehension and keyboard-navigation barriers that limit any broader accessibility claim.",Bounded candidate wording,candidate
-comparison_or_reference,"Build-and-evaluate performance targets, quantitative task outcomes and qualitative explanations integrated through a predeclared joint display.",Declared before interpretation,accepted locally
-evidence_body,"Illustrative values only: the worked dataset records the local response target in 14 of 16 task sessions, while feedback identifies ambiguous urgency labels and one keyboard-navigation barrier. The joint display shows that fast response does not imply accessible comprehension.",Illustrative values or synthesis only,synthetic
-uncertainty,"Small illustrative sample, artificial tasks, device variation, learning effects and incomplete accessibility coverage.",Route-specific qualification,accepted locally
-counter_evidence,"Illustrative values only: the worked dataset records the local response target in 14 of 16 task sessions, while feedback identifies ambiguous urgency labels and one keyboard-navigation barrier. The joint display shows that fast response does not imply accessible comprehension.",Adverse or negative component retained,accepted locally
-forbidden_inference,The prototype is accessible and ready for campus deployment.,Stronger wording rejected,locked
-return_trigger,A component protocol failure reopens its responsible gate; a missing integration product prevents the hybrid claim from passing Claim Gate.,Gate return rule,accepted locally

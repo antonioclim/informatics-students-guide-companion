@@ -1,0 +1,4 @@
+object,superseded_state,replacement,reason,date,status
+Repository candidate,1.1.1-rc.3 live private scaffold,1.2.0-rc.1,"Title, book source, figures and companion architecture changed",2026-08-23,local replacement only; live repository unchanged
+Figure generation,v3.2 repository figure payload,v4.3 private staging payload,Current figure authority changed,2026-08-23,private hold
+Printed appendices,Appendices A–E in v3.7.1,DC-A–DC-E migration candidates,Planned v3.8.0 architecture; not yet executed,2026-08-23,open book-integration gate

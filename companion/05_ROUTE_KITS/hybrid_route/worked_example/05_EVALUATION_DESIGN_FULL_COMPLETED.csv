@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,INTEGRATE-EVAL-01,Synthetic route-specific basis,accepted locally,Stable ID.
+Minimum meaningful claim,"Within the synthetic tasks, response performance meets the declared threshold and most tasks are completed, while qualitative episodes expose unresolved keyboard-navigation and notification-timing barriers.",Synthetic route-specific basis,accepted locally,Exact candidate wording.
+Consequence if wrong,The project would overstate the route-specific contribution.,Synthetic route-specific basis,accepted locally,Why the claim deserves scrutiny.
+Route and unit,"hybrid route | System run, participant task and qualitative feedback episode, kept distinct and integrated only at the joint-display stage.",Synthetic route-specific basis,accepted locally,Route-specific evaluation object.
+Comparison or reference,"Build-and-evaluate performance targets, quantitative task outcomes and qualitative explanations integrated through a predeclared joint display.",Synthetic route-specific basis,accepted locally,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,"Within the synthetic tasks, response performance meets the declared threshold and most tasks are completed, while qualitative episodes expose unresolved keyboard-navigation and notification-timing barriers.",Synthetic route-specific basis,accepted locally,All required evidence objects.
+"Metrics, estimates or analytic outputs",Route-appropriate synthetic outputs only,Synthetic route-specific basis,accepted locally,With units and definitions.
+Uncertainty,"Synthetic sample, local prototype, limited assistive-technology coverage and integration choices.",Synthetic route-specific basis,accepted locally,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,Keyboard-only navigation fails one critical path and several participants miss time-limited notifications.,Synthetic route-specific basis,accepted locally,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check","Test whether performance logs, task records and feedback episodes can be linked without collapsing their units of analysis.",Synthetic route-specific basis,accepted locally,Proportionate independent challenge.
+Acceptance and narrowing rule,Accept only within the declared boundary; reject the stronger wording: The prototype is accessible and ready for campus deployment.,Synthetic route-specific basis,accepted locally,How wording changes.
+"Owner, reviewer, date and version",Student role | synthetic reviewer | 2026-08-23 | 1.0,Synthetic route-specific basis,accepted locally,Lifecycle record.

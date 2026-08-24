@@ -1,0 +1,2 @@
+step,route,purpose,claim_served,release_or_state,environment,action,expected_evidence,failure_case,secondary_path,fallback,reset_or_stop_rule,time_boundary,owner,status
+,,,,,,,,,,,,,,

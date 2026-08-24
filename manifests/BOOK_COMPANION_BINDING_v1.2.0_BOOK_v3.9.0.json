@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "companion_version": "1.2.0",
+  "companion_status": "PUBLIC_RELEASE_PACKAGE",
+  "associated_book": {
+    "title": "Student’s Guide to Research Projects, Theses and Dissertations",
+    "subtitle": "From Topic Selection to Evidence, Implementation, Writing and Defence",
+    "authors": [
+      "Antonio Clim",
+      "Martino Aldrigo"
+    ],
+    "version": "v3.9.0",
+    "docx_sha256": "14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5",
+    "technical_pdf_sha256": "35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a",
+    "formal_appendices_present": false
+  },
+  "repository": {
+    "full_name": "antonioclim/informatics-students-guide-companion",
+    "target_tag": "v1.2.0",
+    "target_release_title": "Student’s Guide Digital Companion v1.2.0",
+    "creator_curator": "Antonio Clim"
+  },
+  "figures": {
+    "authority_version": "v4.3",
+    "authority_archive_sha256": "3c1ea05af05ce28d50195a86b27327c933a6fd719bf76158a60014e6834091ec",
+    "formats": [
+      "ODG",
+      "SVG",
+      "PPTX",
+      "PNG 600 ppi"
+    ]
+  },
+  "licensing": {
+    "documentation_and_reusable_resources": "CC BY 4.0",
+    "scripts_and_code": "MIT"
+  },
+  "zenodo": {
+    "creator_curator": "Antonio Clim",
+    "version": "1.2.0",
+    "public_doi": null
+  },
+  "excluded": [
+    "book manuscript",
+    "technical proof",
+    "publisher-facing files",
+    "correspondence",
+    "signed forms",
+    "personal data"
+  ]
+}

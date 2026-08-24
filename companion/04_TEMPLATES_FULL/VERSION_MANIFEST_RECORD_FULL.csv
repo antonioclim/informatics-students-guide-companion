@@ -1,0 +1,15 @@
+field,entry,evidence_or_basis,review_status,guidance
+Object identifier,,,,Stable ID.
+Authoritative filename,,,,Exact name.
+Version,,,,Explicit version.
+Date,,,,ISO date.
+SHA-256,,,,Digest.
+Source master and hash,,,,Upstream authority.
+Derived objects and hashes,,,,Complete list.
+Content identity,,,,"Question, evidence, result, claim and limit preserved."
+Rights status,,,,"Private use, permission, licence or unresolved."
+Privacy status,,,,"Public, internal, confidential, restricted or mixed."
+Proof state,,,,"Technical, Word proof or final candidate."
+Supersedes and superseded by,,,,Version lineage.
+Manifest location,,,,Machine-readable record.
+"Owner, reviewer and next gate",,,,Lifecycle record.

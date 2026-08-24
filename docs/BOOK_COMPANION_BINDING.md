@@ -1,0 +1,17 @@
+# Book–Companion binding
+
+- Book title: Student’s Guide to Research Projects, Theses and Dissertations
+- Subtitle: From Topic Selection to Evidence, Implementation, Writing and Defence
+- Book authors: Antonio Clim and Martino Aldrigo
+- Book version: v3.9.0 — Final Publisher Master
+- Book DOCX SHA-256: `14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5`
+- Technical proof SHA-256: `35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a`
+- Digital Companion version: 1.2.0
+- Repository creator and curator: Antonio Clim
+- Figure authority: v4.3
+- Figure authority archive SHA-256: `3c1ea05af05ce28d50195a86b27327c933a6fd719bf76158a60014e6834091ec`
+- Formal Appendices A–E in the book: absent
+- Stable appendix-derived principles in the book: integrated
+- Operational appendix-derived objects: maintained through DC-A–DC-E
+- Manuscript and proof in GitHub or Zenodo: excluded
+- Zenodo DOI in this binding: not asserted

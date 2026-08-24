@@ -1,0 +1,2 @@
+run_id,work_unit_id,source_state,data_or_material_id,environment,dependencies,action,candidate_output,manual_intervention,material_ai_assistance,failure_or_deviation,inspection,disposition,evidence_location,date,owner
+,,,,,,,,,,,,,,,

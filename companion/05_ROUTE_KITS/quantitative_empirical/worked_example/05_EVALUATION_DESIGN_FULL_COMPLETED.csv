@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,MEASURE-EVAL-01,Synthetic route-specific basis,accepted locally,Stable ID.
+Minimum meaningful claim,"In the synthetic worked dataset for the declared exercise, the checklist condition is associated with fewer unresolved errors, while completion-time uncertainty includes practically small differences.",Synthetic route-specific basis,accepted locally,Exact candidate wording.
+Consequence if wrong,The project would overstate the route-specific contribution.,Synthetic route-specific basis,accepted locally,Why the claim deserves scrutiny.
+Route and unit,"quantitative empirical study | One participant-task record, with repeated measures kept distinct from independent participants.",Synthetic route-specific basis,accepted locally,Route-specific evaluation object.
+Comparison or reference,"Predeclared checklist and standard-instruction conditions, with baseline adjustment, missingness record and uncertainty intervals.",Synthetic route-specific basis,accepted locally,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,"In the synthetic worked dataset for the declared exercise, the checklist condition is associated with fewer unresolved errors, while completion-time uncertainty includes practically small differences.",Synthetic route-specific basis,accepted locally,All required evidence objects.
+"Metrics, estimates or analytic outputs",Route-appropriate synthetic outputs only,Synthetic route-specific basis,accepted locally,With units and definitions.
+Uncertainty,"Synthetic data, limited sample, task specificity, non-blinded condition and sensitivity to missingness assumptions.",Synthetic route-specific basis,accepted locally,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,Completion-time differences are unstable across plausible missingness treatments and confidence increases more than observed performance.,Synthetic route-specific basis,accepted locally,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check","Pilot the task timing, scoring rubric, missingness capture and data export on synthetic records before recruitment.",Synthetic route-specific basis,accepted locally,Proportionate independent challenge.
+Acceptance and narrowing rule,Accept only within the declared boundary; reject the stronger wording: The checklist improves debugging ability for informatics students generally.,Synthetic route-specific basis,accepted locally,How wording changes.
+"Owner, reviewer, date and version",Student role | synthetic reviewer | 2026-08-23 | 1.0,Synthetic route-specific basis,accepted locally,Lifecycle record.

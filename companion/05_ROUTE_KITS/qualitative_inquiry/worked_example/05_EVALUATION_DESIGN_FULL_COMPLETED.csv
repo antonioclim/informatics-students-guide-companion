@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,INTERPRET-EVAL-01,Synthetic route-specific basis,accepted locally,Stable ID.
+Minimum meaningful claim,"Within the synthetic accounts, uncertainty is managed through repeated switching between code inspection, data checks and external reassurance, with negative cases showing deliberate refusal of automated suggestions.",Synthetic route-specific basis,accepted locally,Exact candidate wording.
+Consequence if wrong,The project would overstate the route-specific contribution.,Synthetic route-specific basis,accepted locally,Why the claim deserves scrutiny.
+Route and unit,"qualitative inquiry | One participant account and its analytically relevant episodes, not one statement counted as an independent observation.",Synthetic route-specific basis,accepted locally,Route-specific evaluation object.
+Comparison or reference,"Constant comparison across accounts, deliberate search for negative cases and reflexive comparison between early and revised interpretations.",Synthetic route-specific basis,accepted locally,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,"Within the synthetic accounts, uncertainty is managed through repeated switching between code inspection, data checks and external reassurance, with negative cases showing deliberate refusal of automated suggestions.",Synthetic route-specific basis,accepted locally,All required evidence objects.
+"Metrics, estimates or analytic outputs",Route-appropriate synthetic outputs only,Synthetic route-specific basis,accepted locally,With units and definitions.
+Uncertainty,"Synthetic accounts, interpretive dependence, sampling boundary and absence of real participant validation.",Synthetic route-specific basis,accepted locally,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,Several negative cases reject automated suggestions and use independent reconstruction before acceptance.,Synthetic route-specific basis,accepted locally,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check","Code two synthetic accounts independently, compare coding decisions and revise the analytic frame before full analysis.",Synthetic route-specific basis,accepted locally,Proportionate independent challenge.
+Acceptance and narrowing rule,Accept only within the declared boundary; reject the stronger wording: Novice analysts generally trust automated notebook outputs.,Synthetic route-specific basis,accepted locally,How wording changes.
+"Owner, reviewer, date and version",Student role | synthetic reviewer | 2026-08-23 | 1.0,Synthetic route-specific basis,accepted locally,Lifecycle record.

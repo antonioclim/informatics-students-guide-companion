@@ -1,27 +1,12 @@
-name: Validate candidate
-
-"on":
-  push:
-    branches: ["candidate/**", "main"]
-  pull_request:
-  workflow_dispatch:
-
-permissions:
-  contents: read
-
+name: validate-public-release
+on: [push, pull_request, workflow_dispatch]
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v7
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
-      - name: Validate declared structure and hashes
-        run: python scripts/validate_repository.py
-      - name: Scan for sensitive content
-        run: python scripts/scan_sensitive_content.py --fail-on medium
-      - name: Check whitespace
-        run: git diff --check
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/validate_release_candidate.py

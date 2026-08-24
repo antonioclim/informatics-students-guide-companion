@@ -1,4 +1,9 @@
-1.1.1-rc.3
-Status: unpublished private review candidate
-Date prepared: 19 August 2026
-Native editable figures: v3.2
+1.2.0
+Package freeze date: 24 August 2026
+Associated book: v3.9.0 — Final Publisher Master
+Associated book SHA-256: 14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5
+Technical proof SHA-256: 35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a
+Figure authority: v4.3
+Figure authority archive SHA-256: 3c1ea05af05ce28d50195a86b27327c933a6fd719bf76158a60014e6834091ec
+Licensing: CC BY 4.0 for documentation and reusable resources; MIT for scripts and code
+Zenodo DOI: not asserted in this package

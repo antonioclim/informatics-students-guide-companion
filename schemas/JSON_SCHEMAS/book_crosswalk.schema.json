@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Book-to-companion crosswalk",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "book_object_id",
+      "book_location",
+      "primary_companion_path",
+      "coverage_status"
+    ],
+    "properties": {
+      "book_object_id": {
+        "type": "string"
+      },
+      "book_location": {
+        "type": "string"
+      },
+      "primary_companion_path": {
+        "type": "string"
+      },
+      "coverage_status": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+filename,purpose,status,empirical_status
+01_ROUTE_PROFILE_COMPLETED.csv,01 Route Profile Completed,synthetic teaching object,not empirical evidence
+02_SCOPE_CANVAS_MIN_COMPLETED.csv,02 Scope Canvas Min Completed,synthetic teaching object,not empirical evidence
+03_DECIDE_RECORD_MIN_COMPLETED.csv,03 Decide Record Min Completed,synthetic teaching object,not empirical evidence
+04_EXECUTION_PROVENANCE_FULL_COMPLETED.csv,04 Execution Provenance Full Completed,synthetic teaching object,not empirical evidence
+05_EVALUATION_DESIGN_FULL_COMPLETED.csv,05 Evaluation Design Full Completed,synthetic teaching object,not empirical evidence
+06_CLAIM_EVIDENCE_MAP_MIN_COMPLETED.csv,06 Claim Evidence Map Min Completed,synthetic teaching object,not empirical evidence
+07_DEMONSTRATION_RUNBOOK_MIN_COMPLETED.csv,07 Demonstration Runbook Min Completed,synthetic teaching object,not empirical evidence
+08_DEFENCE_QUESTION_MATRIX_MIN_COMPLETED.csv,08 Defence Question Matrix Min Completed,synthetic teaching object,not empirical evidence
+09_GATE_RECORD_MIN_COMPLETED.csv,09 Gate Record Min Completed,synthetic teaching object,not empirical evidence

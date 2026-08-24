@@ -1,0 +1,9 @@
+field,entry,evidence_or_basis,review_status,guidance
+Assessed product,Illustrative thesis or research project,Synthetic teaching scenario,accepted locally,Name the exact assessed product.
+Working title,Traceable validation and recovery in a bounded file-submission prototype,Synthetic title,accepted locally,Use the exact current title.
+Dominant route,build-and-evaluate,Locked route vocabulary,accepted locally,Select one of the eight routes.
+Unit of analysis,"One scripted submission task and its resulting validation, audit and recovery record.",Route-specific unit definition,accepted locally,Name the unit on which observations or interpretations are made.
+Research question,"Under declared laboratory tasks, does the prototype reduce invalid and duplicate submissions while preserving traceability and recovery relative to a manual shared-folder baseline?",Route-aligned question pattern,accepted locally,Write one bounded route-aligned question.
+Core evidence body,"Manual shared-folder baseline versus the prototype under the same synthetic task set, including invalid, duplicate and interrupted submissions.",Route-specific evidence obligation,accepted locally,Name the evidence required for the principal claim.
+Principal uncertainty,"Limited task coverage, implementation defects, laboratory environment and absence of real users or adversarial security testing.",Synthetic route boundary,accepted locally,State the main uncertainty that must remain visible.
+Forbidden inference,The prototype is ready for institutional production use.,Hostile boundary test,accepted locally,Name the attractive claim not authorised by the design.

@@ -1,15 +1,5 @@
-# Contributing during the hold
+# Contributing
 
-External contribution is not open while the public-release hold is active.
+Contributions should preserve the separation between durable methodological guidance, dated institutional information and synthetic examples. Proposed changes must identify the affected file, rationale, evidence or authority, semantic impact, rights and privacy impact and validation performed.
 
-Private reviewers should submit proposed changes as a documented patch or review note that states:
-
-- file and record affected;
-- reason for the change;
-- source or authority;
-- semantic impact;
-- rights and privacy impact;
-- tests performed;
-- required supersession or version update.
-
-Do not overwrite accepted records silently. Do not add empirical claims to synthetic route examples. Do not add a public licence or DOI without the recorded release decision.
+Do not add real participant data, confidential records, proprietary full texts, credentials, private contact details or publisher-facing material. Changes to figure content must be reconciled across the authoritative ODG source and the SVG, PPTX and PNG derivatives.

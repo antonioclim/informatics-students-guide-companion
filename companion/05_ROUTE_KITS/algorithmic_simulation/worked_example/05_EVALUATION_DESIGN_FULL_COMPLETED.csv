@@ -1,0 +1,13 @@
+field,entry,evidence_or_basis,review_status,guidance
+Evaluation identifier,MODEL-EVAL-01,Synthetic route-specific basis,accepted locally,Stable ID.
+Minimum meaningful claim,"Within the declared synthetic scenarios, token-bucket control reduces false rejection under moderate burstiness relative to fixed-window control, while its queue-tail advantage does not persist under sustained near-saturation load.",Synthetic route-specific basis,accepted locally,Exact candidate wording.
+Consequence if wrong,The project would overstate the route-specific contribution.,Synthetic route-specific basis,accepted locally,Why the claim deserves scrutiny.
+Route and unit,"algorithmic or simulation study | One simulation scenario defined by policy, offered load, burst factor, service distribution and random seed.",Synthetic route-specific basis,accepted locally,Route-specific evaluation object.
+Comparison or reference,"Token-bucket versus fixed-window, checked against hand-calculated limiting cases and a no-control reference.",Synthetic route-specific basis,accepted locally,"Baseline, case, counterfactual, reference or synthesis basis."
+Evidence body,"Within the declared synthetic scenarios, token-bucket control reduces false rejection under moderate burstiness relative to fixed-window control, while its queue-tail advantage does not persist under sustained near-saturation load.",Synthetic route-specific basis,accepted locally,All required evidence objects.
+"Metrics, estimates or analytic outputs",Route-appropriate synthetic outputs only,Synthetic route-specific basis,accepted locally,With units and definitions.
+Uncertainty,"Monte Carlo variation, sensitivity to arrival and service assumptions, implementation error and scenario-selection bias.",Synthetic route-specific basis,accepted locally,"Statistical, numerical, interpretive, measurement or transfer."
+Negative and counter-evidence,"At high offered load, the token-bucket scenario shows a materially longer queue tail.",Synthetic route-specific basis,accepted locally,"Failures, null-compatible findings, negative cases or alternatives."
+"Reproduction, audit or adversarial check","Verify empty-load, saturated-load and deterministic-service cases against hand-calculated expectations before running the full grid.",Synthetic route-specific basis,accepted locally,Proportionate independent challenge.
+Acceptance and narrowing rule,Accept only within the declared boundary; reject the stronger wording: Token-bucket control is superior for production APIs.,Synthetic route-specific basis,accepted locally,How wording changes.
+"Owner, reviewer, date and version",Student role | synthetic reviewer | 2026-08-23 | 1.0,Synthetic route-specific basis,accepted locally,Lifecycle record.

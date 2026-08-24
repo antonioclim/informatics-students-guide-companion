@@ -1,0 +1,2 @@
+gate,decision_question,required_objects,evidence_status,strongest_hostile_objection,decision,named_actions,return_route,reviewer,date,version
+Claim Gate,What exact wording can the synthetic evidence support and where must it stop?,Evaluation design; claim–evidence map; counter-evidence; route boundary,verified,How can an interpretive result be trusted without statistical reliability?,pass with conditions,Retain the declared uncertainty and reject the stronger wording.,Design Gate,Synthetic reviewer role,2026-08-23,1.0

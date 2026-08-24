@@ -1,137 +1,73 @@
 #!/usr/bin/env python3
-from __future__ import annotations
-import csv, hashlib, json, re, subprocess, sys, zipfile
 from pathlib import Path
-import xml.etree.ElementTree as ET
-
-ROOT=Path(__file__).resolve().parents[1]
-errors=[]
-
-SKIP_DIRS={'.git','__pycache__','_qa','_build'}
-
-def is_repo_file(path: Path) -> bool:
-    try:
-        rel=path.relative_to(ROOT)
-    except ValueError:
-        return False
-    return path.is_file() and not any(part in SKIP_DIRS for part in rel.parts)
-
-def repo_files():
-    return (path for path in ROOT.rglob('*') if is_repo_file(path))
-
-def sha(path):
-    h=hashlib.sha256()
-    with path.open('rb') as f:
-        for chunk in iter(lambda:f.read(1024*1024),b''): h.update(chunk)
-    return h.hexdigest()
-
-def need(rel):
-    p=ROOT/rel
-    if not p.exists(): errors.append(f'missing {rel}')
-    return p
-
-for rel in [
-    'README.md','VERSION.txt','CITATION.cff','PUBLIC_RELEASE_HOLD.md','RIGHTS_AND_RELEASE_STATUS.md',
-    'PRIVACY_AND_SECURITY.md','REPOSITORY_CONTENT_POLICY.md','ZENODO_DEPOSIT_HOLD.md',
-    'companion/00_READ_FIRST','companion/01_WORKBOOK','companion/02_TEMPLATES_MINIMUM',
-    'companion/03_TEMPLATES_FULL','companion/04_ROUTE_KITS','companion/05_REGISTRIES','companion/06_MAINTENANCE',
-    'figures/01_SVG_AUTHORITATIVE','figures/02_PNG_TECHNICAL_FALLBACK','figures/03_METADATA',
-    'figures/06_ODG_NATIVE_EDITABLE_INDIVIDUAL','figures/07_ODG_NATIVE_EDITABLE_CONSOLIDATED',
-    'figures/08_PPTX_NATIVE_EDITABLE_INDIVIDUAL','figures/09_PPTX_NATIVE_EDITABLE_CONSOLIDATED',
-    'figures/10_NATIVE_EDITABILITY_QA','figures/NATIVE_FORMATS_SUPERSESSION_NOTICE.md',
-    'figures/05_SCRIPTS/validate_native_editability.py',
-    'manifests/REPOSITORY_MANIFEST.csv','manifests/ASSET_RIGHTS_PRIVACY_REGISTER.csv',
-    'manifests/EXCLUSIONS_REGISTER.csv','SHA256SUMS.txt']:
-    need(rel)
-
-if (ROOT/'LICENSE_AND_RIGHTS.md').exists(): errors.append('superseded root LICENSE_AND_RIGHTS.md still present')
-prohibited_names={'LICENSE','LICENSE.txt','LICENSE.md'}
-for p in repo_files():
-    if p.name in prohibited_names: errors.append(f'public licence file prohibited during hold: {p.relative_to(ROOT)}')
-    lower=p.name.lower()
-    if ('authoritative_master' in lower or lower.endswith('.pdf') and 'report' not in lower):
-        errors.append(f'possible prohibited manuscript/proof payload: {p.relative_to(ROOT)}')
-for prohibited in ['companion/07_ARCHIVED_RESOURCES','companion/08_PROVENANCE']:
-    if (ROOT/prohibited).exists(): errors.append(f'excluded directory present: {prohibited}')
-
-cff=(ROOT/'CITATION.cff').read_text(encoding='utf-8')
-for required in ['Antonio','Clim','Martino','Aldrigo','1.1.1-rc.3','unpublished candidate','Native Editable Figures']:
-    if required.lower() not in cff.lower(): errors.append(f'CITATION.cff missing {required}')
-for forbidden in ['date-released:', 'doi:', 'license:', 'repository-code:']:
-    if forbidden in cff.lower(): errors.append(f'CITATION.cff prematurely contains {forbidden}')
-
-version=(ROOT/'VERSION.txt').read_text(encoding='utf-8')
-if not version.startswith('1.1.1-rc.3\n'): errors.append('VERSION.txt is not 1.1.1-rc.3')
-
-CANONICAL_TITLE='The Informatics Student’s Guide to Research Projects, Theses and Dissertations'
-DUPLICATED_TITLE=CANONICAL_TITLE+' to Research Projects, Theses and Dissertations'
-for path in repo_files():
-    if path.name=='SHA256SUMS.txt': continue
-    if path.suffix.lower() in {'.md','.txt','.csv','.json','.cff','.yml','.yaml','.py','.sh'} or path.name in {'.gitignore','.gitattributes'}:
-        content=path.read_text(encoding='utf-8',errors='replace')
-        if DUPLICATED_TITLE in content: errors.append(f'duplicated canonical title in {path.relative_to(ROOT)}')
-        relpath=path.relative_to(ROOT).as_posix()
-        if '1.1.1-rc.2' in content and relpath not in {'scripts/validate_repository.py','companion/06_MAINTENANCE/DEPRECATION_AND_SUPERSESSION_LOG.csv'}: errors.append(f'superseded rc.2 reference in active file {relpath}')
-if '33 full CSV records' not in (ROOT/'companion/00_READ_FIRST/README.md').read_text(encoding='utf-8'):
-    errors.append('companion README does not declare 33 full CSV records')
-
-svgs=sorted((ROOT/'figures/01_SVG_AUTHORITATIVE').glob('*.svg'))
-pngs=sorted((ROOT/'figures/02_PNG_TECHNICAL_FALLBACK').glob('*.png'))
-if len(svgs)!=18: errors.append(f'expected 18 SVG files, found {len(svgs)}')
-if len(pngs)!=18: errors.append(f'expected 18 PNG files, found {len(pngs)}')
-for svg in svgs:
-    try:
-        tree=ET.parse(svg); tags={el.tag.rsplit('}',1)[-1] for el in tree.iter()}; bad=tags & {'script','foreignObject','image'}
-        if bad: errors.append(f'unsafe/raster tags {bad} in {svg.name}')
-    except Exception as e: errors.append(f'bad SVG {svg.name}: {e}')
-
-mins=list((ROOT/'companion/02_TEMPLATES_MINIMUM').glob('*.csv'))
-fulls=list((ROOT/'companion/03_TEMPLATES_FULL').glob('*.csv'))
-routes=[p for p in (ROOT/'companion/04_ROUTE_KITS').iterdir() if p.is_dir()]
-if len(mins)!=12: errors.append(f'expected 12 minimum templates, found {len(mins)}')
-if len(fulls)!=33: errors.append(f'expected 33 full templates, found {len(fulls)}')
-if len(routes)!=4: errors.append(f'expected 4 route kits, found {len(routes)}')
-
-# Native package validation.
-proc=subprocess.run([sys.executable,str(ROOT/'figures/05_SCRIPTS/validate_native_editability.py')],capture_output=True,text=True)
-if proc.returncode: errors.append('native editability validation failed: '+(proc.stdout+proc.stderr).strip())
-
-# Verify SHA256SUMS.
-sums=ROOT/'SHA256SUMS.txt'
-if sums.exists():
-    declared=set()
-    for line in sums.read_text(encoding='utf-8').splitlines():
-        if not line.strip(): continue
-        expected,rel=line.split('  ',1); declared.add(rel); p=ROOT/rel
-        if not p.exists(): errors.append(f'SHA256SUMS missing file {rel}')
-        elif sha(p)!=expected: errors.append(f'SHA256 mismatch {rel}')
-    actual={p.relative_to(ROOT).as_posix() for p in repo_files() if p.name!='SHA256SUMS.txt'}
-    if declared!=actual:
-        for rel in sorted(actual-declared): errors.append(f'SHA256SUMS undeclared file {rel}')
-        for rel in sorted(declared-actual): errors.append(f'SHA256SUMS stale file {rel}')
-
-# Repository manifest coverage, excluding self-generated manifest files and SHA list.
-manifest_excluded={'manifests/REPOSITORY_MANIFEST.csv','manifests/REPOSITORY_MANIFEST.json','SHA256SUMS.txt'}
-actual_manifest={p.relative_to(ROOT).as_posix() for p in repo_files() if p.relative_to(ROOT).as_posix() not in manifest_excluded}
+import csv, hashlib, json, re, sys, zipfile
 try:
-    with (ROOT/'manifests/REPOSITORY_MANIFEST.csv').open(encoding='utf-8-sig',newline='') as f: mrows=list(csv.DictReader(f))
-    declared={r['path'] for r in mrows}
-    if declared!=actual_manifest: errors.append(f'repository manifest coverage mismatch: declared={len(declared)} actual={len(actual_manifest)}')
-    for r in mrows:
-        p=ROOT/r['path']
-        if p.exists() and (int(r['bytes'])!=p.stat().st_size or r['sha256']!=sha(p)): errors.append(f'repository manifest mismatch {r["path"]}')
-except Exception as e: errors.append(f'repository manifest parse error: {e}')
-
-# CSV parsability and no absolute private paths.
-for p in (path for path in repo_files() if path.suffix.lower()=='.csv'):
-    try:
-        with p.open(encoding='utf-8-sig',newline='') as f: list(csv.reader(f))
-    except Exception as e: errors.append(f'CSV parse error {p.relative_to(ROOT)}: {e}')
-for p in repo_files():
-    if p.suffix.lower() in {'.md','.txt','.csv','.json','.cff','.yml','.yaml','.py','.sh'}:
-        t=p.read_text(encoding='utf-8',errors='replace')
-        if re.search(r'/(?:mnt/data|home|Users)/',t): errors.append(f'absolute private path in {p.relative_to(ROOT)}')
-
-if errors:
-    print('\n'.join('ERROR: '+x for x in errors)); sys.exit(1)
-print('PASS: rc.3 structure, hashes, 18 SVG/PNG pairs, 18 native ODG/PPTX pairs, consolidated native files, companion counts, rights hold and CFF hold')
+ import yaml
+except Exception:
+ yaml=None
+ROOT=Path(__file__).resolve().parents[1]
+EXPECTED_COUNT=402; BOOK_HASH='14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5'; PROOF_HASH='35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a'; FIG_HASH='3c1ea05af05ce28d50195a86b27327c933a6fd719bf76158a60014e6834091ec'
+errors=[]
+def req(cond,msg):
+ if not cond: errors.append(msg)
+def sha(p):
+ h=hashlib.sha256()
+ with p.open('rb') as f:
+  for b in iter(lambda:f.read(1048576),b''): h.update(b)
+ return h.hexdigest()
+files=[p for p in ROOT.rglob('*') if p.is_file()]
+req(len(files)==EXPECTED_COUNT,f'file count {len(files)} != {EXPECTED_COUNT}')
+required=['README.md','VERSION','VERSION.txt','CITATION.cff','.zenodo.json','LICENSE-CODE','LICENSE-DOCUMENTATION.md','RIGHTS_AND_RELEASE_STATUS.md','manifests/FILE_CLASS_LICENCE_REGISTER.csv','manifests/REPOSITORY_MANIFEST.csv','manifests/REPOSITORY_MANIFEST.json','manifests/REPOSITORY_SHA256.txt','companion/04_TEMPLATES_FULL/SUBMISSION_PACKAGE_MANIFEST_FULL.csv','companion/07_SUBMISSION_AND_DEFENCE/CURRENT_SESSION_SUBMISSION_CONTROL.csv','companion/07_SUBMISSION_AND_DEFENCE/DC_E_SUBMISSION_AND_DEFENCE.md']
+for rel in required: req((ROOT/rel).is_file(),'missing '+rel)
+readme=(ROOT/'README.md').read_text(encoding='utf-8')
+req('Student’s Guide to Research Projects, Theses and Dissertations' in readme,'canonical title missing')
+req('From Topic Selection to Evidence, Implementation, Writing and Defence' in readme,'subtitle missing')
+req('Antonio Clim and Martino Aldrigo' in readme,'associated book authors missing')
+version=(ROOT/'VERSION.txt').read_text(encoding='utf-8')
+req((ROOT/'VERSION').read_text(encoding='utf-8').strip()=='1.2.0','VERSION mismatch')
+req(version.splitlines()[0].strip()=='1.2.0','VERSION.txt mismatch')
+req(BOOK_HASH in version,'final book hash missing')
+req(PROOF_HASH in version,'final proof hash missing')
+req(FIG_HASH in version,'figure authority hash missing')
+active_paths=['README.md','VERSION.txt','CITATION.cff','RIGHTS_AND_RELEASE_STATUS.md','docs/RELEASE_NOTES_1.2.0.md','companion/00_READ_FIRST/README.md','companion/00_READ_FIRST/RELEASE_STATUS.md','figures/README.md','figures/VERSION.txt']
+active='\n'.join((ROOT/x).read_text(encoding='utf-8',errors='replace') for x in active_paths)
+for token in ['PRIVATE REVIEW CANDIDATE','PUBLIC RELEASE HOLD','No public licence is granted','release remains prohibited','private hold','1.2.0-rc.4','v3.8.2']:
+ req(token.lower() not in active.lower(),'active metadata retains '+token)
+req('CC BY 4.0' in active,'CC BY 4.0 missing')
+req('MIT' in active,'MIT missing')
+req('10.5281/zenodo.' not in active,'unverified Zenodo DOI asserted')
+if yaml:
+ try:
+  cff=yaml.safe_load((ROOT/'CITATION.cff').read_text(encoding='utf-8'))
+  req(cff.get('version')=='1.2.0','CFF version mismatch')
+  a=cff.get('authors') or []
+  req(len(a)==1 and a[0].get('family-names')=='Clim' and a[0].get('given-names')=='Antonio','CFF creator mismatch')
+  for k in ['doi','date-released','license']: req(k not in cff,'CFF prematurely asserts '+k)
+ except Exception as e: errors.append('CFF parse: '+str(e))
+else: errors.append('PyYAML unavailable')
+z=json.loads((ROOT/'.zenodo.json').read_text(encoding='utf-8'))
+req(len(z.get('creators',[]))==1 and z['creators'][0].get('name')=='Clim, Antonio','Zenodo creator mismatch')
+req('doi' not in z and 'prereserve_doi' not in z,'Zenodo DOI prematurely asserted')
+for p in files:
+ rel=p.relative_to(ROOT).as_posix(); low=rel.lower()
+ req('__pycache__' not in rel and not low.endswith('.pyc'),'generated bytecode included: '+rel)
+ req(not rel.startswith('figures/00_AUTHOR_SUPPLIED_ODG_UNMODIFIED/'),'duplicated source ODG included: '+rel)
+ req(not any(x in low for x in ['final_publisher_master','technical_proof','.eml','signed_form','correspondence','identity_document']),'private object included: '+rel)
+ req('1.2.0-rc.4' not in rel,'active rc.4 filename included: '+rel)
+fig=ROOT/'figures'
+counts={e:len(list(fig.rglob('*'+e))) for e in ['.svg','.png','.odg','.pptx']}
+req(counts=={'.svg':18,'.png':19,'.odg':19,'.pptx':19},'figure counts invalid '+str(counts))
+wb=ROOT/'companion/01_WORKBOOK/COMPANION_WORKBOOK_v1.2.0.docx'
+try:
+ with zipfile.ZipFile(wb) as q:
+  req('word/vbaProject.bin' not in q.namelist(),'workbook contains macros')
+  txt='\n'.join(q.read(n).decode('utf-8','replace') for n in q.namelist() if n.endswith('.xml'))
+  for token in ['PRIVATE REVIEW CANDIDATE','PUBLIC RELEASE HOLD','1.2.0-rc.4','v3.8.2']:
+   req(token not in txt,'workbook retains '+token)
+  req('PUBLIC RELEASE' in txt and 'CC BY 4.0' in txt and 'MIT' in txt,'workbook release or licence metadata missing')
+except Exception as e: errors.append('workbook invalid: '+str(e))
+# File-class licence register must map the mandated classes.
+lic=(ROOT/'manifests/FILE_CLASS_LICENCE_REGISTER.csv').read_text(encoding='utf-8')
+for token in ['CC BY 4.0','MIT','Workbook','Figure assets','Code and scripts','NOT DISTRIBUTED']:
+ req(token in lic,'licence register missing '+token)
+print(json.dumps({'status':'FAIL' if errors else 'PASS','file_count':len(files),'figure_counts':counts,'errors':errors},ensure_ascii=False,indent=2)); sys.exit(1 if errors else 0)

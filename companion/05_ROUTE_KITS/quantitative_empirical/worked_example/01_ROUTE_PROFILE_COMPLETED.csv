@@ -1,0 +1,9 @@
+field,entry,evidence_or_basis,review_status,guidance
+Assessed product,Illustrative thesis or research project,Synthetic teaching scenario,accepted locally,Name the exact assessed product.
+Working title,Effect of a structured debugging checklist in a bounded laboratory exercise,Synthetic title,accepted locally,Use the exact current title.
+Dominant route,quantitative empirical study,Locked route vocabulary,accepted locally,Select one of the eight routes.
+Unit of analysis,"One participant-task record, with repeated measures kept distinct from independent participants.",Route-specific unit definition,accepted locally,Name the unit on which observations or interpretations are made.
+Research question,"In one declared laboratory exercise, how do completion time, unresolved-error count and self-reported confidence differ between a checklist condition and a standard-instruction condition?",Route-aligned question pattern,accepted locally,Write one bounded route-aligned question.
+Core evidence body,"Predeclared checklist and standard-instruction conditions, with baseline adjustment, missingness record and uncertainty intervals.",Route-specific evidence obligation,accepted locally,Name the evidence required for the principal claim.
+Principal uncertainty,"Synthetic data, limited sample, task specificity, non-blinded condition and sensitivity to missingness assumptions.",Synthetic route boundary,accepted locally,State the main uncertainty that must remain visible.
+Forbidden inference,The checklist improves debugging ability for informatics students generally.,Hostile boundary test,accepted locally,Name the attractive claim not authorised by the design.

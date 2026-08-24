@@ -1,0 +1,86 @@
+vocabulary,value,meaning,status
+route,build-and-evaluate,Construct and evaluate a bounded artefact or workflow.,locked for v1.2.0
+route,algorithmic or simulation study,"Evaluate an algorithm, formal problem or simulation under explicit assumptions.",locked for v1.2.0
+route,predictive or machine-learning study,Evaluate a predictive system against credible baselines and held-out evidence.,locked for v1.2.0
+route,quantitative empirical study,Estimate or compare using an explicit empirical design and uncertainty.,locked for v1.2.0
+route,qualitative inquiry,Interpret purposively sampled material with an explicit analytic trace and reflexivity.,locked for v1.2.0
+route,case study,Investigate a bounded case through contextual and multiple evidence sources.,locked for v1.2.0
+route,formal evidence synthesis,"Use a protocol to identify, resolve, appraise and synthesise studies.",locked for v1.2.0
+route,hybrid route,Integrate named route components at an explicit integration point.,locked for v1.2.0
+gate_decision,pass,The named evidence supports progression without an unresolved blocking condition.,locked for v1.2.0
+gate_decision,pass with conditions,"Progression is authorised only with named conditions, owners and reopening triggers.",locked for v1.2.0
+gate_decision,repair,The current record remains at the same gate pending proportionate correction.,locked for v1.2.0
+gate_decision,return,An earlier gate must be reopened because the defect invalidates a prior commitment.,locked for v1.2.0
+gate_decision,await authority,A named competent authority must resolve the issue before progression.,locked for v1.2.0
+gate_decision,stop,The current route or project is halted and the reason is preserved.,locked for v1.2.0
+lifecycle_status,draft,Incomplete working object.,locked for v1.2.0
+lifecycle_status,candidate,Produced but not yet inspected.,locked for v1.2.0
+lifecycle_status,reviewed,Assessed by a named reviewer.,locked for v1.2.0
+lifecycle_status,accepted locally,Admitted for the declared downstream use within the recorded boundary.,locked for v1.2.0
+lifecycle_status,superseded,Replaced by a named version and retained for provenance.,locked for v1.2.0
+lifecycle_status,withdrawn,Known to be unusable or unsafe and not to be used.,locked for v1.2.0
+evidence_status,missing,Required evidence object does not exist or cannot be located.,locked for v1.2.0
+evidence_status,candidate,Evidence exists but has not been inspected.,locked for v1.2.0
+evidence_status,verified,Identity and relevant content have been checked.,locked for v1.2.0
+evidence_status,accepted conditionally,Evidence is usable only under named limitations.,locked for v1.2.0
+evidence_status,rejected,Evidence is not fit for the declared decision or claim.,locked for v1.2.0
+inclusion_status,candidate,Object awaits screening or appraisal.,locked for v1.2.0
+inclusion_status,included,Object is included for a stated use.,locked for v1.2.0
+inclusion_status,excluded,Object is excluded for a recorded reason.,locked for v1.2.0
+inclusion_status,duplicate,Object duplicates an already controlled identity.,locked for v1.2.0
+inclusion_status,superseded,A more authoritative or current version governs use.,locked for v1.2.0
+work_disposition,accept locally,Admit the candidate for its declared downstream use.,locked for v1.2.0
+work_disposition,repair,Correct the candidate and reinspect it.,locked for v1.2.0
+work_disposition,repeat,Repeat the work unit from a controlled starting state.,locked for v1.2.0
+work_disposition,reject,Do not admit the candidate.,locked for v1.2.0
+work_disposition,defer,Postpone the decision pending named evidence or authority.,locked for v1.2.0
+work_disposition,quarantine,"Isolate the object because of safety, rights, privacy, provenance or integrity risk.",locked for v1.2.0
+claim_status,candidate,Wording awaits full evidence review.,locked for v1.2.0
+claim_status,supported conditionally,Evidence supports the wording only under named conditions.,locked for v1.2.0
+claim_status,supported,The complete evidence body supports the bounded wording.,locked for v1.2.0
+claim_status,narrowed,Stronger wording was rejected and the accepted wording is narrower.,locked for v1.2.0
+claim_status,suspended,The claim is withheld pending evidence or authority.,locked for v1.2.0
+claim_status,rejected,The complete evidence body does not support the claim.,locked for v1.2.0
+privacy_class,public,Intended for unrestricted public access subject to rights.,locked for v1.2.0
+privacy_class,internal,Restricted to an authorised project or institutional workspace.,locked for v1.2.0
+privacy_class,confidential,"Access limited by agreement, role or sensitivity.",locked for v1.2.0
+privacy_class,restricted,"Access controlled by law, ethics, security, licence or explicit authority.",locked for v1.2.0
+privacy_class,mixed,The object contains components with different access classes.,locked for v1.2.0
+source_status,current,Verified against the current source on the stated date.,locked for v1.2.0
+source_status,pending verification,Operational use is blocked pending re-verification.,locked for v1.2.0
+source_status,conflict,Two competent sources or instructions appear inconsistent.,locked for v1.2.0
+source_status,superseded,A later source governs the operational value.,locked for v1.2.0
+source_status,broken link,The recorded locator failed and requires investigation.,locked for v1.2.0
+ai_disposition,accepted,Candidate assistance was independently verified and adopted without semantic change.,locked for v1.2.0
+ai_disposition,modified,Candidate assistance was changed through human judgement and independently verified.,locked for v1.2.0
+ai_disposition,rejected,Candidate assistance was not used in the accepted object.,locked for v1.2.0
+rights_status,pending clearance,Rights or redistribution authority has not yet been established.,locked for v1.2.0
+rights_status,cleared for declared use,The stated use is supported by named authority or a verified rights basis.,locked for v1.2.0
+rights_status,restricted,"Use is limited by licence, agreement, institutional decision or other named condition.",locked for v1.2.0
+rights_status,prohibited,The declared use is not authorised.,locked for v1.2.0
+rights_status,not applicable,No third-party rights decision applies to the declared object and use.,locked for v1.2.0
+render_status,not rendered,No technical rendering has yet been produced.,locked for v1.2.0
+render_status,candidate,A rendering exists but has not completed the declared inspection.,locked for v1.2.0
+render_status,passed technical proof,The declared technical rendering and visual checks passed.,locked for v1.2.0
+render_status,failed,The rendering or visual inspection identified a blocking defect.,locked for v1.2.0
+render_status,pending Microsoft Word proof,"Technical proof exists, but the required Microsoft Word/Windows proof remains open.",locked for v1.2.0
+submission_status,not assembled,The submission object has not yet been assembled.,locked for v1.2.0
+submission_status,assembled,The object is present in a candidate package but has not completed internal review.,locked for v1.2.0
+submission_status,internally reviewed,The object has passed the declared internal package review.,locked for v1.2.0
+submission_status,authorised for submission,A named competent authority has authorised the declared submission action.,locked for v1.2.0
+submission_status,submitted with retained evidence,Submission was performed and the portal or transmission evidence was retained.,locked for v1.2.0
+submission_status,superseded,A later controlled package object governs submission.,locked for v1.2.0
+audit_result,pass,The declared check passed.,locked for v1.2.0
+audit_result,fail,The declared check failed.,locked for v1.2.0
+audit_result,not applicable,The check does not apply and the reason is recorded.,locked for v1.2.0
+audit_result,pending,The check has not yet been completed.,locked for v1.2.0
+rehearsal_result,pass,The rehearsal passed without an unresolved blocking condition.,locked for v1.2.0
+rehearsal_result,pass with conditions,The rehearsal supports progression only with named conditions.,locked for v1.2.0
+rehearsal_result,repair,The same rehearsal object must be corrected and repeated.,locked for v1.2.0
+rehearsal_result,return,The failure reopens an earlier gate.,locked for v1.2.0
+access_status,pending verification,Access has not yet been verified for the declared use.,locked for v1.2.0
+access_status,available,Access is verified for the declared use.,locked for v1.2.0
+access_status,available with conditions,Access is verified only under named conditions.,locked for v1.2.0
+access_status,restricted,"Access is limited by named authority, agreement, security or confidentiality conditions.",locked for v1.2.0
+access_status,unavailable,The required access cannot currently be obtained.,locked for v1.2.0
+access_status,not applicable,No external access decision applies and the reason is recorded.,locked for v1.2.0

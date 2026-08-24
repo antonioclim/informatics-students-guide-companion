@@ -1,0 +1,34 @@
+Domain,Canonical term/object,Locked meaning,Prohibited conflation or drift
+Project identity,Book title,"Student’s Guide to Research Projects, Theses and Dissertations",Do not treat as an article or rename without an explicit decision.
+Authorship,Author order,Antonio Clim and Martino Aldrigo,"Do not infer Martino Aldrigo’s affiliation, ORCID, biography or contribution."
+Route,build-and-evaluate,Construct and evaluate a bounded artefact or workflow.,Not synonymous with production deployment or software completion.
+Route,algorithmic or simulation study,"Evaluate an algorithm, formal problem or simulation under explicit assumptions.",Not reduced to a programming exercise.
+Route,predictive or machine-learning study,Evaluate a predictive system against credible baselines and held-out evidence.,Not equivalent to model training or a favourable aggregate metric.
+Route,quantitative empirical study,Estimate or compare using an explicit empirical design and uncertainty.,Not automatically causal.
+Route,qualitative inquiry,Interpret purposively sampled material with an explicit analytic trace and reflexivity.,Must remain distinct from case study.
+Route,case study,Investigate a bounded case through contextual and multiple evidence sources.,Must remain distinct from generic qualitative inquiry.
+Route,formal evidence synthesis,"Use a protocol to identify, resolve, appraise and synthesise studies.","Publication, record and study are not synonyms."
+Route,hybrid route,Integrate named route components at an explicit integration point.,Not a label for an incoherent mixture.
+Case,Mara,"Build-and-evaluate file-submission flow with validation, audit and recovery.",Do not assign this software project to Alex.
+Case,Alex,Predictive/ML support-ticket routing: transparent rule baseline plus bounded classifier.,Do not generalise to deployment readiness.
+Case,Irina,Quantitative empirical debugging/learning intervention in an accessible cohort.,Do not convert to a case study or claim causality without design support.
+Case,Victor,Formal evidence synthesis: 47 publications resolve to 39 studies.,Do not call the 47 publications “47 studies”.
+Control,TRACE,"Register consequential AI uses, evidence, verification, disposition and responsibility.","AI output remains a candidate intervention, not evidence or authority."
+Control,SCOPE,"Externalise and version scope, commitments, evidence and uncertainty.",Not an official institutional form or a validated universal method.
+Control,CORPUS,"Make search, identity resolution, reading, appraisal, use and synthesis inspectable.",Not merely a folder or reference-manager library.
+Control,DECIDE,"Record consequential alternatives, authority, assumptions, tests and reopening triggers.",Not an external universal framework or irreversible verdict.
+Evidence object,publication,A disseminated item or document manifestation.,Not automatically a distinct study.
+Evidence object,record,"A database, repository or bibliographic representation of an object.",Not automatically the publication or study itself.
+Evidence object,study,The underlying investigation that may produce multiple publications or records.,Must be resolved before synthesis counts.
+Evaluation,verification,"Check conformance to a specification, reference or expected property.",Not synonymous with evaluation or validation.
+Evaluation,evaluation,"Judge performance, quality or evidence against a declared question and criterion.",Not automatically external validity.
+Evaluation,validation,Establish adequacy for an intended use or interpretation under stated conditions.,Not a generic label for any test.
+Reproducibility,reproduction,Re-run or reconstruct under the book’s declared same-study conditions.,Do not infer from file availability alone.
+Reproducibility,reproducibility,"Obtain consistent results through an appropriately independent reconstruction or analytic path, as defined locally.",Terminology must be stated because disciplinary conventions differ.
+Reproducibility,replication,Conduct a new study or data collection addressing the same claim.,Not a second execution of the same script.
+Execution status,candidate output,A newly produced object awaiting inspection and disposition.,Not evidence or accepted work.
+Execution status,accepted work,A locally admitted unit in the Execution Dossier.,"Not automatically evaluated evidence, validated method or defensible claim."
+Submission,scientific record,"The controlled problem, method, evidence, claim, contribution and limits.",Not the same object as the administrative package.
+Submission,institutional submission package,"Current required files, declarations and metadata.",Administrative acceptance does not validate the science.
+Submission,private defence evidence set,"Restricted logs, detailed evidence, recovery materials and provenance.",Not automatically publishable.
+Submission,public-release candidate,A rights- and privacy-screened candidate for later publication.,"No live GitHub release, Zenodo DOI or public licence is currently confirmed."

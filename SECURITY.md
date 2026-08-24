@@ -1,7 +1,3 @@
 # Security policy
 
-Do not report a suspected secret, private identifier or confidential record in a public issue. Use a private channel designated by the authors or future publisher.
-
-Where a credential may have been exposed, treat rotation or revocation as urgent. Removing the visible line alone may not remove it from Git history.
-
-This candidate has no supported public release and no public vulnerability-disclosure programme while the release hold remains active.
+Do not disclose suspected credentials, private identifiers or confidential records in a public issue. Report them through a private channel designated by the repository curator. Where a credential may have been exposed, revoke or rotate it immediately and remove it from Git history; deleting the visible line is insufficient.
