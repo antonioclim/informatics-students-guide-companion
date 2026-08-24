@@ -18,13 +18,16 @@
     "dissertations",
     "informatics education",
     "research methods",
-    "reproducibility"
+    "reproducibility",
+    "digital companion",
+    "scholarly workflow"
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/antonioclim/informatics-students-guide-companion",
+      "identifier": "https://github.com/antonioclim/informatics-students-guide-companion/releases/tag/v1.2.0",
       "relation": "isIdenticalTo",
       "scheme": "url"
     }
-  ]
+  ],
+  "publication_date": "2026-08-24"
 }

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the Digital Companion using the metadata below."
+message: "Please cite the archived Digital Companion using the metadata below."
 title: "Student’s Guide Digital Companion"
 type: dataset
 authors:
@@ -8,8 +8,10 @@ authors:
     orcid: "https://orcid.org/0000-0003-4745-0431"
     affiliation: "Department of Economic Informatics and Cybernetics, Bucharest University of Economic Studies"
 version: "1.2.0"
+doi: "10.5281/zenodo.22017362"
+date-released: 2026-08-24
 repository-code: "https://github.com/antonioclim/informatics-students-guide-companion"
-url: "https://github.com/antonioclim/informatics-students-guide-companion"
+url: "https://doi.org/10.5281/zenodo.22017362"
 abstract: >-
   Public Digital Companion to Student’s Guide to Research Projects, Theses and Dissertations: From Topic Selection to Evidence, Implementation, Writing and Defence, authored by Antonio
   Clim and Martino Aldrigo. The companion is curated by Antonio Clim and
@@ -23,3 +25,5 @@ keywords:
   - informatics education
   - research methods
   - reproducibility
+  - digital companion
+  - scholarly workflow

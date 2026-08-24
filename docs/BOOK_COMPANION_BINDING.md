@@ -14,4 +14,8 @@
 - Stable appendix-derived principles in the book: integrated
 - Operational appendix-derived objects: maintained through DC-A–DC-E
 - Manuscript and proof in GitHub or Zenodo: excluded
-- Zenodo DOI in this binding: not asserted
+- GitHub release: https://github.com/antonioclim/informatics-students-guide-companion/releases/tag/v1.2.0
+- Zenodo version DOI: https://doi.org/10.5281/zenodo.22017362
+- Zenodo all-versions DOI: https://doi.org/10.5281/zenodo.22017361
+- Archived public payload SHA-256: `3611fd2e2c445ece5804094cb8271b0a02322a238bdaf9b0866560c034165700`
+- DOI dependency of the book: none; the book directs readers to release metadata for the version used

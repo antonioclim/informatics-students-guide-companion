@@ -17,4 +17,6 @@ Documentation and reusable resources are CC BY 4.0. Scripts and code are MIT. Th
 
 ## Archival record
 
-No Zenodo DOI is asserted in this GitHub release asset. After Zenodo publication, use the verified release metadata to identify the DOI assigned to this version.
+The exact release payload is preserved at Zenodo under the version-specific DOI https://doi.org/10.5281/zenodo.22017362. The all-versions DOI is https://doi.org/10.5281/zenodo.22017361. The Zenodo ZIP is byte-identical to the curated GitHub Release asset and has SHA-256 `3611fd2e2c445ece5804094cb8271b0a02322a238bdaf9b0866560c034165700` and MD5 `7e1bd9dca9c77cfa7d4d21883cdba0ef`.
+
+The GitHub tag `v1.2.0` and attached ZIP remain the immutable release snapshot. Post-tag changes on `main` record verified archival metadata only and do not revise the released payload.

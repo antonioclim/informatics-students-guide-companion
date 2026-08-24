@@ -1,9 +1,15 @@
 1.2.0
 Package freeze date: 24 August 2026
+Post-release metadata reconciliation: 24 August 2026
 Associated book: v3.9.0 — Final Publisher Master
 Associated book SHA-256: 14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5
 Technical proof SHA-256: 35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a
 Figure authority: v4.3
 Figure authority archive SHA-256: 3c1ea05af05ce28d50195a86b27327c933a6fd719bf76158a60014e6834091ec
 Licensing: CC BY 4.0 for documentation and reusable resources; MIT for scripts and code
-Zenodo DOI: not asserted in this package
+GitHub release: https://github.com/antonioclim/informatics-students-guide-companion/releases/tag/v1.2.0
+Zenodo record: https://zenodo.org/records/22017362
+Zenodo version DOI: 10.5281/zenodo.22017362
+Zenodo all-versions DOI: 10.5281/zenodo.22017361
+Archived public payload SHA-256: 3611fd2e2c445ece5804094cb8271b0a02322a238bdaf9b0866560c034165700
+Archived public payload MD5: 7e1bd9dca9c77cfa7d4d21883cdba0ef
