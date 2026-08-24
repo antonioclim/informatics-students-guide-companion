@@ -15,7 +15,7 @@ def sha(p):
  with p.open('rb') as f:
   for b in iter(lambda:f.read(1048576),b''): h.update(b)
  return h.hexdigest()
-files=[p for p in ROOT.rglob('*') if p.is_file()]
+files=[p for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.relative_to(ROOT).parts]
 req(len(files)==EXPECTED_COUNT,f'file count {len(files)} != {EXPECTED_COUNT}')
 required=['README.md','VERSION','VERSION.txt','CITATION.cff','.zenodo.json','LICENSE-CODE','LICENSE-DOCUMENTATION.md','RIGHTS_AND_RELEASE_STATUS.md','manifests/FILE_CLASS_LICENCE_REGISTER.csv','manifests/REPOSITORY_MANIFEST.csv','manifests/REPOSITORY_MANIFEST.json','manifests/REPOSITORY_SHA256.txt','companion/04_TEMPLATES_FULL/SUBMISSION_PACKAGE_MANIFEST_FULL.csv','companion/07_SUBMISSION_AND_DEFENCE/CURRENT_SESSION_SUBMISSION_CONTROL.csv','companion/07_SUBMISSION_AND_DEFENCE/DC_E_SUBMISSION_AND_DEFENCE.md']
 for rel in required: req((ROOT/rel).is_file(),'missing '+rel)

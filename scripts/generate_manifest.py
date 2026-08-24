@@ -3,6 +3,9 @@ from pathlib import Path
 import csv, hashlib, json, mimetypes
 ROOT=Path(__file__).resolve().parents[1]
 EX={'manifests/REPOSITORY_MANIFEST.csv','manifests/REPOSITORY_MANIFEST.json','manifests/REPOSITORY_SHA256.txt','SHA256SUMS.txt'}
+SKIP_PARTS={'.git','__pycache__'}
+def payload_files():
+ return [p for p in sorted(ROOT.rglob('*')) if p.is_file() and not any(part in SKIP_PARTS for part in p.relative_to(ROOT).parts)]
 def sha(p):
  h=hashlib.sha256()
  with p.open('rb') as f:
@@ -27,9 +30,9 @@ def role(rel):
  if rel.startswith('manifests/'): return 'control_manifest'
  return 'repository_governance'
 rows=[]
-for p in sorted(ROOT.rglob('*')):
- rel=p.relative_to(ROOT).as_posix() if p.is_file() else ''
- if p.is_file() and rel not in EX:
+for p in payload_files():
+ rel=p.relative_to(ROOT).as_posix()
+ if rel not in EX:
   rows.append({'path':rel,'sha256':sha(p),'size_bytes':str(p.stat().st_size),'media_type':media(p),'release_scope':'PUBLIC_RELEASE','licence':licence(rel),'privacy_status':'PUBLIC_SCREENED','source_role':role(rel)})
 mp=ROOT/'manifests'; mp.mkdir(exist_ok=True)
 fields=list(rows[0])
@@ -37,8 +40,8 @@ with (mp/'REPOSITORY_MANIFEST.csv').open('w',encoding='utf-8',newline='') as f:
  w=csv.DictWriter(f,fieldnames=fields,lineterminator='\n'); w.writeheader(); w.writerows(rows)
 obj={'schema_version':'3.0','release_version':'1.2.0','book_version':'v3.9.0','generated_at':'2026-08-24T12:00:00Z','manifest_exclusions':sorted(EX),'entries':rows}
 (mp/'REPOSITORY_MANIFEST.json').write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-allfiles=[p for p in sorted(ROOT.rglob('*')) if p.is_file() and p not in {mp/'REPOSITORY_SHA256.txt',ROOT/'SHA256SUMS.txt'}]
+allfiles=[p for p in payload_files() if p not in {mp/'REPOSITORY_SHA256.txt',ROOT/'SHA256SUMS.txt'}]
 (mp/'REPOSITORY_SHA256.txt').write_text('\n'.join(f'{sha(p)}  {p.relative_to(ROOT).as_posix()}' for p in allfiles)+'\n',encoding='utf-8')
-all2=[p for p in sorted(ROOT.rglob('*')) if p.is_file() and p!=ROOT/'SHA256SUMS.txt']
+all2=[p for p in payload_files() if p!=ROOT/'SHA256SUMS.txt']
 (ROOT/'SHA256SUMS.txt').write_text('\n'.join(f'{sha(p)}  {p.relative_to(ROOT).as_posix()}' for p in all2)+'\n',encoding='utf-8')
 print(json.dumps({'status':'PASS','manifest_rows':len(rows),'repository_sha_entries':len(allfiles)},indent=2))

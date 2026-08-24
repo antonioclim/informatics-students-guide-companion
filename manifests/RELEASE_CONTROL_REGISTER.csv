@@ -1,8 +1,0 @@
-gate_id,gate,status,owner,evidence_or_next_verification
-G01,Final book binding and exclusion boundary,CLOSED,Antonio Clim,Book v3.9.0 and proof hashes recorded; both excluded from public payload
-G02,Companion content and semantic validation,CLOSED,Antonio Clim,Native validation suite passes for the 402-file payload
-G03,Rights and file-class licensing,CLOSED,Antonio Clim,CC BY 4.0 and MIT decision recorded in FILE_CLASS_LICENCE_REGISTER.csv
-G04,Privacy and sensitive-content review,CLOSED,Antonio Clim,Medium-threshold automated scan passes; contextual review recorded
-G05,Figure authority and editable derivatives,CLOSED,Antonio Clim,Figure Authority v4.3 and derivative counts verified
-G06,GitHub commit tag Release asset and public visibility,POST_PUBLICATION_VERIFY,Antonio Clim,Verify live after the controlled browser mutation
-G07,Zenodo version 1.2.0 and DOI,PHASE19D,Antonio Clim,No DOI asserted before publication and verification

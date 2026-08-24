@@ -1,7 +1,0 @@
-asset_class,location,provenance,privacy,current_release_decision,maintenance_control
-Templates and module documentation,companion/,Authorial companion material aligned with book v3.9.0,No real participant data permitted,CC BY 4.0 PUBLIC RELEASE,Revalidate rights privacy and current-source boundaries at each version
-Route kits and synthetic worked examples,companion/05_ROUTE_KITS/,Synthetic or composite teaching objects,No real organisations participants or findings,CC BY 4.0 PUBLIC RELEASE,Retain synthetic warning and semantic validation
-Validation scripts,scripts/,Authorial validation and release-engineering code,Scans cannot guarantee absence of contextual risk,MIT PUBLIC RELEASE,Run security and dependency review before each release
-Figure v4.3 files,figures/,Controlled v4.3 figure authority and derivatives,No participant data,CC BY 4.0 PUBLIC RELEASE,Reconcile every accepted content edit across ODG SVG PPTX and PNG
-Repository control records,manifests/; docs/; root metadata,Authorial release-control records,No personal or confidential payloads,CC BY 4.0 PUBLIC RELEASE,Regenerate manifests hashes and release notes after changes
-Book manuscript proof and publisher-facing files,excluded,Separate publisher-controlled objects,May contain confidential or private material,NOT DISTRIBUTED,Maintain exclusion tests and do not commit

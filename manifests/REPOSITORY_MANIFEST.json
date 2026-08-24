@@ -3912,8 +3912,8 @@
     },
     {
       "path": "scripts/generate_manifest.py",
-      "sha256": "8b2956ea9314aaf35c9b7d92fe94b157d1499fc0298467a40e12253f920f9dcc",
-      "size_bytes": "3351",
+      "sha256": "678b4b68f6fc3dc41a073efc50b76f3cd6e2d414e82ccfa19e19093673f43163",
+      "size_bytes": "3441",
       "media_type": "text/x-python",
       "release_scope": "PUBLIC_RELEASE",
       "licence": "MIT",
@@ -3962,8 +3962,8 @@
     },
     {
       "path": "scripts/validate_repository.py",
-      "sha256": "07619b5480ea548e0c8ff44a3e34f3b57c9d74f607dce4f6deec4cdded418cb6",
-      "size_bytes": "5302",
+      "sha256": "e115593733818ca6b15e1a559c5fed1049991a78ffdd8518d93d7f1b55530eaa",
+      "size_bytes": "5346",
       "media_type": "text/x-python",
       "release_scope": "PUBLIC_RELEASE",
       "licence": "MIT",
@@ -3982,8 +3982,8 @@
     },
     {
       "path": "scripts/verify_manifest.py",
-      "sha256": "70c01cf99d9a537c2a039802cd029f7787c26e2c5ee734963cc2fb18dd730579",
-      "size_bytes": "2318",
+      "sha256": "58c0b597c9267eef5fbf44fb8b30ce54be8e42f62112ec899b77dc6ba028ff82",
+      "size_bytes": "2388",
       "media_type": "text/x-python",
       "release_scope": "PUBLIC_RELEASE",
       "licence": "MIT",
