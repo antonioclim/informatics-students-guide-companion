@@ -1,7 +1,7 @@
 1.2.0
 Package freeze date: 24 August 2026
 Post-release metadata reconciliation: 24 August 2026
-DOI reconciliation workflow trigger: 24 August 2026
+Final validation workflow trigger: 24 August 2026
 Associated book: v3.9.0 — Final Publisher Master
 Associated book SHA-256: 14eff00a111e9e985cc86e5e640cd9ae967f2e170e7d0768e765f80aa1c092d5
 Technical proof SHA-256: 35bca9ce3809cc55a82bdd6e82548cf292458d32792aa10d3066d2aa3da1fa6a
